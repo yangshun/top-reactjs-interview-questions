@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import util from 'node:util';
 import { QuestionMetadata, QuestionRaw } from './types';
-import { parse } from 'csv-parse';
+import { parse } from 'csv-parse/sync';
 
 const readFileAsync = util.promisify(fs.readFile);
 
@@ -10,10 +10,13 @@ function readQuestionsSheet(): Record<string, QuestionRaw> {
   const csvFile = fs.readFileSync(
     path.join(process.cwd(), 'data', 'react-questions.csv'),
   );
-  const records = parse(csvFile);
+
+  const records = parse(csvFile.toString(), {
+    columns: true,
+    skip_empty_lines: true,
+  });
   const recordsDict = {};
   records.forEach((row) => (recordsDict[row.slug] = row));
-
   return recordsDict;
 }
 const qnsDict = readQuestionsSheet();
@@ -23,9 +26,11 @@ async function syncQuestion(qnSlug: string, locale: string = 'en-US') {
   const directoryExists = fs.existsSync(questionDirectory);
 
   if (!directoryExists) {
+    fs.mkdirSync(path.join(process.cwd(), questionDirectory));
     fs.cpSync(
       path.join(process.cwd(), '__template__', 'todo-change-me'),
       path.join(process.cwd(), questionDirectory),
+      { recursive: true },
     );
   }
 
@@ -43,7 +48,7 @@ async function syncQuestion(qnSlug: string, locale: string = 'en-US') {
   const newMetadata = {
     ...metadata,
     slug: qnRaw.slug,
-    ranking: qnRaw.ranking,
+    ranking: +qnRaw.ranking,
     section: qnRaw.section,
   };
 

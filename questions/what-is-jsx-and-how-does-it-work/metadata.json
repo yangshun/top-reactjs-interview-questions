@@ -1,0 +1,15 @@
+{
+  "slug": "what-is-jsx-and-how-does-it-work",
+  "languages": [],
+  "companies": [],
+  "premium": false,
+  "duration": 5,
+  "published": true,
+  "featured": true,
+  "category": "react",
+  "topics": ["javascript"],
+  "importance": "low",
+  "ranking": 30,
+  "difficulty": "easy",
+  "section": "basics"
+}

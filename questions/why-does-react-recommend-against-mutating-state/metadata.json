@@ -1,0 +1,15 @@
+{
+  "slug": "why-does-react-recommend-against-mutating-state",
+  "languages": [],
+  "companies": [],
+  "premium": false,
+  "duration": 5,
+  "published": true,
+  "featured": true,
+  "category": "react",
+  "topics": ["javascript"],
+  "importance": "low",
+  "ranking": 230,
+  "difficulty": "easy",
+  "section": "intermediate"
+}
