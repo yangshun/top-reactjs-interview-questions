@@ -69,7 +69,11 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <!-- Update here: /questions/what-is-react-describe-the-benefits-of-react/en-US.mdx -->
 
-    <!-- Do not use any headings within the TL;DR section.  -->
+    React is a popular, open-source JavaScript library (not a framework) used for building user interfaces, particularly for single-page applications (SPAs). It is developed and maintained by Meta (formerly Facebook) and a community of individual developers.
+    
+    React follows a component-based architecture (the user interface is broken down into reusable components that manage their own state), making it easy to maintain and develop code. Components can be independently managed, helping developers to reuse and share the logic across applications.
+    
+    React enables developers to create large web applications that can update and render efficiently (through a virtual Document Object Model (Virtual DOM)) in response to data changes. This technique enhances application performance, ensuring smooth and responsive user experiences.
 
     <!-- Update here: /questions/what-is-react-describe-the-benefits-of-react/en-US.mdx -->
 
