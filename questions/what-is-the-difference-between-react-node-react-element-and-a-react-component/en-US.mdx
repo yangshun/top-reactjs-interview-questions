@@ -4,16 +4,76 @@ title: What is the difference between React Node, React Element, and a React Com
 
 ## TL;DR
 
-<!-- Do not use any headings within the TL;DR section.  -->
+A React node is a term that encompasses any output that a React component can return. This can include strings, numbers, React elements, or even arrays of nodes and null or undefined. When talking about React nodes, we refer to anything a React component might return from its render method.
+
+React elements are the building blocks of React applications. They represent DOM elements, such as divs, spans, and buttons. React elements are immutable, meaning that they cannot be changed once they are created. This makes them easy to reason about and helps to prevent errors.
+
+React Component may be a function or a class that can accept props and return a React Element. It encapsulates the logic and state to produce the UI, and can be reused throughout an application.
 
 ---
 
-## Some heading
+## React Node
+React nodes are more flexible than React elements. They can represent any type of data, including strings, numbers, and arrays. This makes them useful for creating complex components that return a variety of different types of data.
 
-TODO
+Example 1: Here is an example of a React component that returns a React node
 
-## Further reading
+```js
+function MyComponent() {
+  return <div>Hello, world!</div>;
+}
+```
 
-- [Foo](#foo)
-- [Bar](#bar)
+Example 2: Here is an example of a React component that returns an array of React nodes
+
+```js
+function MyComponent() {
+  return [<div>Hello, world!</div>, <div>Goodbye, world!</div>];
+}
+```
+The render method of this component returns an array of React elements, which is a type of React node.
+
+## React Element
+A React Element is an immutable, plain object that represents a DOM node or a component. It is what React uses to build the DOM structure. React Elements are created using JSX or React.createElement().
+
+Example 1: 
+```js
+const element = <div className="greeting">Hello, world!</div>;
+
+```
+
+Example 2: Using React.createElement:
+```js
+const element = React.createElement('div', { className: 'greeting' }, 'Hello, world!');
+
+```
+
+## React Component
+A React Component is a JavaScript function or class that optionally accepts inputs (i.e., properties or props) and returns a React Element (via JSX or React.createElement). Components can be stateful or stateless and can manage their own state and lifecycle methods.
+
+Functional components (These are plain JavaScript functions that return React Elements. They are simpler and typically used for presentational purposes.)
+
+Example: 
+
+```js
+const Greeting = () => {
+  return <h1>Hello, world!</h1>;
+};
+
+```
+
+Class Components (These are ES6 classes that extend from React.Component and have additional features such as state and lifecycle methods.)
+
+Example: 
+
+```js
+class Greeting extends React.Component {
+  render() {
+    return <h1>Hello, world!</h1>;
+  }
+}
+
+```
+
+- [React Element](https://react.dev/reference/react/createElement)
+- [React Component](https://react.dev/reference/react/Component)
 
