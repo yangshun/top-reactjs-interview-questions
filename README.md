@@ -89,7 +89,11 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <!-- Update here: /questions/what-is-the-difference-between-react-node-react-element-and-a-react-component/en-US.mdx -->
 
-    <!-- Do not use any headings within the TL;DR section.  -->
+    A React node is a term that encompasses any output that a React component can return. This can include strings, numbers, React elements, or even arrays of nodes and null or undefined. When talking about React nodes, we refer to anything a React component might return from its render method.
+    
+    React elements are the building blocks of React applications. They represent DOM elements, such as divs, spans, and buttons. React elements are immutable, meaning that they cannot be changed once they are created. This makes them easy to reason about and helps to prevent errors.
+    
+    React Component may be a function or a class that can accept props and return a React Element. It encapsulates the logic and state to produce the UI, and can be reused throughout an application.
 
     <!-- Update here: /questions/what-is-the-difference-between-react-node-react-element-and-a-react-component/en-US.mdx -->
 
