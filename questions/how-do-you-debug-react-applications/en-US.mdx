@@ -4,16 +4,97 @@ title: How do you debug React applications?
 
 ## TL;DR
 
-<!-- Do not use any headings within the TL;DR section.  -->
+To debug React applications, you can use the React Developer Tools browser extension to inspect component hierarchies and state. Additionally, you can use `console.log` statements to log data and errors, and leverage breakpoints in your code using browser developer tools. For more advanced debugging, you can use error boundaries to catch and handle errors in your components.
 
 ---
 
-## Some heading
+## How do you debug React applications?
 
-TODO
+### Using React Developer Tools
+
+The React Developer Tools browser extension is a powerful tool for inspecting and debugging React applications. It allows you to:
+
+- Inspect the component hierarchy
+- View and edit component state and props
+- Trace component re-renders
+
+You can install the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/react-developer-tools) or [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/).
+
+### Using `console.log` statements
+
+Adding `console.log` statements in your code can help you understand the flow of your application and identify issues. For example:
+
+```javascript
+function MyComponent(props) {
+  console.log('Rendering MyComponent with props:', props);
+  return <div>{props.message}</div>;
+}
+```
+
+### Using breakpoints
+
+Browser developer tools, such as Chrome DevTools, allow you to set breakpoints in your code. This can help you pause execution and inspect the current state of your application. To set a breakpoint:
+
+1. Open the browser's developer tools (usually by pressing `F12` or `Ctrl+Shift+I`).
+2. Navigate to the "Sources" tab.
+3. Find the relevant file and line of code.
+4. Click on the line number to set a breakpoint.
+
+### Using error boundaries
+
+Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI. To create an error boundary, you can use the `componentDidCatch` lifecycle method or the `getDerivedStateFromError` static method:
+
+```javascript
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error('Error caught by ErrorBoundary:', error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return <h1>Something went wrong.</h1>;
+    }
+
+    return this.props.children;
+  }
+}
+```
+
+### Using React's built-in error handling
+
+React provides built-in error handling mechanisms, such as the `useErrorHandler` hook in React 18. This hook allows you to handle errors in functional components:
+
+```javascript
+import { useErrorHandler } from 'react-error-boundary';
+
+function MyComponent() {
+  const handleError = useErrorHandler();
+
+  useEffect(() => {
+    try {
+      // Some code that might throw an error
+    } catch (error) {
+      handleError(error);
+    }
+  }, []);
+
+  return <div>My Component</div>;
+}
+```
 
 ## Further reading
 
-- [Foo](#foo)
-- [Bar](#bar)
+- [React Developer Tools](https://reactjs.org/blog/2015/09/02/new-react-developer-tools.html)
+- [Error boundaries in React](https://reactjs.org/docs/error-boundaries.html)
+- [Using the Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+- [Debugging JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Debugging)
 

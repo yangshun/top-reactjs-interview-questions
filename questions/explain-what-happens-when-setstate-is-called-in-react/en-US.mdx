@@ -4,16 +4,56 @@ title: Explain what happens when `setState` is called in React
 
 ## TL;DR
 
-<!-- Do not use any headings within the TL;DR section.  -->
+When `setState` is called in React, it schedules an update to the component's state object. React then merges the new state with the current state and triggers a re-render of the component. This process is asynchronous, meaning the state change might not happen immediately. React batches multiple `setState` calls for performance optimization.
 
 ---
 
-## Some heading
+## What happens when `setState` is called in React
 
-TODO
+### State update scheduling
+
+When `setState` is called, React schedules an update to the component's state. This means that the state change does not happen immediately. Instead, React marks the component as needing an update and will process the state change later.
+
+```javascript
+this.setState({ count: this.state.count + 1 });
+```
+
+### Merging state
+
+React merges the new state with the current state. The `setState` method performs a shallow merge, meaning it only updates the properties specified in the new state object and leaves the rest unchanged.
+
+```javascript
+this.setState({ name: 'John' });
+// Only the 'name' property is updated, other state properties remain the same
+```
+
+### Re-rendering
+
+After merging the state, React triggers a re-render of the component. The component's `render` method is called, and the virtual DOM is updated. React then compares the virtual DOM with the actual DOM and makes the necessary updates to the actual DOM.
+
+### Asynchronous nature
+
+The `setState` method is asynchronous. React batches multiple `setState` calls for performance optimization. This means that if you call `setState` multiple times in a row, React may combine them into a single update.
+
+```javascript
+this.setState({ count: this.state.count + 1 });
+this.setState({ count: this.state.count + 1 });
+// React may batch these updates into a single update
+```
+
+### Callback function
+
+You can pass a callback function as the second argument to `setState`. This function will be called after the state has been updated and the component has re-rendered.
+
+```javascript
+this.setState({ count: this.state.count + 1 }, () => {
+  console.log('State updated and component re-rendered');
+});
+```
 
 ## Further reading
 
-- [Foo](#foo)
-- [Bar](#bar)
+- [React documentation on setState](https://reactjs.org/docs/react-component.html#setstate)
+- [Understanding setState in React](https://medium.com/@baphemot/understanding-react-setstate-a4640451865b)
+- [React's setState explained](https://daveceddia.com/where-fetch-data-componentwillmount-vs-componentdidmount/)
 

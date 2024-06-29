@@ -1,4 +1,5 @@
 export type QuestionMetadata = Readonly<{
+  published: boolean;
   slug: string;
   ranking: number;
   importance: string;

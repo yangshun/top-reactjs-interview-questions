@@ -4,16 +4,93 @@ title: What does the dependency array of `useEffect` affect?
 
 ## TL;DR
 
-<!-- Do not use any headings within the TL;DR section.  -->
+The dependency array of `useEffect` determines when the effect should re-run. If the array is empty, the effect runs only once after the initial render. If it contains variables, the effect runs whenever any of those variables change. If omitted, the effect runs after every render.
 
 ---
 
-## Some heading
+## What does the dependency array of `useEffect` affect?
 
-TODO
+### Introduction to `useEffect`
+
+The `useEffect` hook in React is used to perform side effects in functional components. These side effects can include data fetching, subscriptions, or manually changing the DOM. The `useEffect` hook takes two arguments: a function that contains the side effect logic and an optional dependency array.
+
+### Dependency array
+
+The dependency array is the second argument to the `useEffect` hook. It is an array of values that the effect depends on. React uses this array to determine when to re-run the effect.
+
+```javascript
+useEffect(() => {
+  // Side effect logic here
+}, [dependency1, dependency2]);
+```
+
+### How the dependency array affects `useEffect`
+
+1. **Empty dependency array (`[]`)**:
+   - The effect runs only once after the initial render.
+   - This is similar to the behavior of `componentDidMount` in class components.
+
+   ```javascript
+   useEffect(() => {
+     // This code runs only once after the initial render
+   }, []);
+   ```
+
+2. **Dependency array with variables**:
+   - The effect runs after the initial render and whenever any of the specified dependencies change.
+   - React performs a shallow comparison of the dependencies to determine if they have changed.
+
+   ```javascript
+   useEffect(() => {
+     // This code runs after the initial render and whenever dependency1 or dependency2 changes
+   }, [dependency1, dependency2]);
+   ```
+
+3. **No dependency array**:
+   - The effect runs after every render.
+   - This can lead to performance issues if the effect is expensive.
+
+   ```javascript
+   useEffect(() => {
+     // This code runs after every render
+   });
+   ```
+
+### Common pitfalls
+
+1. **Stale closures**:
+   - If you use state or props inside the effect without including them in the dependency array, you might end up with stale values.
+   - Always include all state and props that the effect depends on in the dependency array.
+
+   ```javascript
+   const [count, setCount] = useState(0);
+
+   useEffect(() => {
+     const handle = setInterval(() => {
+       console.log(count); // This might log stale values if `count` is not in the dependency array
+     }, 1000);
+
+     return () => clearInterval(handle);
+   }, [count]); // Ensure `count` is included in the dependency array
+   ```
+
+2. **Functions as dependencies**:
+   - Functions are recreated on every render, so including them in the dependency array can cause the effect to run more often than necessary.
+   - Use `useCallback` to memoize functions if they need to be included in the dependency array.
+
+   ```javascript
+   const handleClick = useCallback(() => {
+     // Handle click
+   }, []);
+
+   useEffect(() => {
+     // This effect will not re-run unnecessarily because `handleClick` is memoized
+   }, [handleClick]);
+   ```
 
 ## Further reading
 
-- [Foo](#foo)
-- [Bar](#bar)
+- [React Docs: Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
+- [React Docs: Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
+- [Overreacted: A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
 

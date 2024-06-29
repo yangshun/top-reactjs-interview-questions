@@ -7,7 +7,9 @@
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": ["javascript"],
+  "topics": [
+    "react"
+  ],
   "importance": "low",
   "ranking": 50,
   "difficulty": "easy",

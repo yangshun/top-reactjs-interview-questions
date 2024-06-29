@@ -56,7 +56,7 @@ async function syncQuestion(qnSlug: string, locale: string = 'en-US') {
 
   const newMarkdownFile = markdownFile
     .toString()
-    .replace('TODO_REPLACE_ME', qnRaw.title);
+    .replace('TODO_REPLACE_TITLE', qnRaw.title);
 
   fs.writeFileSync(markdownPath, newMarkdownFile + '\n');
 }
