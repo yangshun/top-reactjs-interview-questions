@@ -2,16 +2,14 @@
   "slug": "explain-what-happens-when-setstate-is-called-in-react",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "medium",
   "ranking": 500,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "internals"
 }

@@ -2,14 +2,14 @@
   "slug": "what-is-react-describe-the-benefits-of-react",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
   "topics": ["react"],
-  "importance": "low",
+  "importance": "high",
   "ranking": 10,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "basics"
 }

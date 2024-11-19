@@ -2,16 +2,14 @@
   "slug": "how-do-you-debug-react-applications",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
+  "topics": ["react"],
   "importance": "low",
   "ranking": 280,
-  "difficulty": "easy",
+  "difficulty": "hard",
   "section": "advanced"
 }

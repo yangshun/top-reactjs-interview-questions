@@ -2,16 +2,14 @@
   "slug": "what-is-code-splitting-in-a-react-application",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
+  "topics": ["react"],
   "importance": "low",
   "ranking": 310,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "advanced"
 }

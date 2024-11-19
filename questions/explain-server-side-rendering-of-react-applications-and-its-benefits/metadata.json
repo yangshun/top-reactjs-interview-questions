@@ -2,16 +2,14 @@
   "slug": "explain-server-side-rendering-of-react-applications-and-its-benefits",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
+  "topics": ["react"],
   "importance": "low",
   "ranking": 370,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "patterns"
 }

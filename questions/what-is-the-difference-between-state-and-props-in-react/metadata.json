@@ -2,15 +2,13 @@
   "slug": "what-is-the-difference-between-state-and-props-in-react",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "high",
   "ranking": 40,
   "difficulty": "easy",
   "section": "basics"

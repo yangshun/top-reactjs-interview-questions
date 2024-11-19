@@ -2,16 +2,14 @@
   "slug": "what-is-the-purpose-of-the-key-prop-in-react",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "high",
   "ranking": 50,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "basics"
 }

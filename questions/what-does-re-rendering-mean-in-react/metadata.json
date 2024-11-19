@@ -2,16 +2,14 @@
   "slug": "what-does-re-rendering-mean-in-react",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "high",
   "ranking": 190,
-  "difficulty": "easy",
+  "difficulty": "hard",
   "section": "intermediate"
 }

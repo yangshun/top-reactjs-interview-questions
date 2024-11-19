@@ -2,16 +2,14 @@
   "slug": "explain-one-way-data-flow-of-react-and-its-benefits",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "medium",
   "ranking": 350,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "patterns"
 }

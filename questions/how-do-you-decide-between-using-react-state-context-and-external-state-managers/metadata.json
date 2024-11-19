@@ -2,16 +2,14 @@
   "slug": "how-do-you-decide-between-using-react-state-context-and-external-state-managers",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "high",
   "ranking": 430,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "patterns"
 }

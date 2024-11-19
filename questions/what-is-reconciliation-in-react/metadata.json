@@ -2,16 +2,14 @@
   "slug": "what-is-reconciliation-in-react",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "high",
   "ranking": 480,
-  "difficulty": "easy",
+  "difficulty": "hard",
   "section": "internals"
 }

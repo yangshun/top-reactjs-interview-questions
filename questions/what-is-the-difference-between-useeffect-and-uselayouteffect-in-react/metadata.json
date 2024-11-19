@@ -2,7 +2,7 @@
   "slug": "what-is-the-difference-between-useeffect-and-uselayouteffect-in-react",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
@@ -10,6 +10,6 @@
   "topics": ["react"],
   "importance": "low",
   "ranking": 110,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "hooks"
 }

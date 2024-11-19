@@ -1,5 +1,5 @@
 {
-  "slug": "what-are-the-rules-of-react-hooks",
+  "slug": "how-would-one-optimize-the-performance-of-react-contexts-to-reduce-rerenders",
   "languages": [],
   "companies": [],
   "access": "free",
@@ -7,9 +7,9 @@
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": ["react"],
+  "topics": ["react", "performance"],
   "importance": "high",
-  "ranking": 100,
+  "ranking": 320,
   "difficulty": "medium",
-  "section": "hooks"
+  "section": "advanced"
 }

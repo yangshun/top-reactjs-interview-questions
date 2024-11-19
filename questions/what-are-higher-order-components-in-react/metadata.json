@@ -2,16 +2,14 @@
   "slug": "what-are-higher-order-components-in-react",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "medium",
   "ranking": 330,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "patterns"
 }

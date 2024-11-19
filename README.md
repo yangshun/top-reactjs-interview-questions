@@ -38,7 +38,7 @@ Curated top React.js interview questions with high quality answers for acing you
 | 28 | [What is React strict mode and what are its benefits?](#what-is-react-strict-mode-and-what-are-its-benefits) |
 | 29 | [How do you localize React applications?](#how-do-you-localize-react-applications) |
 | 30 | [What is code splitting in a React application?](#what-is-code-splitting-in-a-react-application) |
-| 31 | [How would one optimise the performance of React contexts to reduce rerenders?](#how-would-one-optimise-the-performance-of-react-contexts-to-reduce-rerenders) |
+| 31 | [How would one optimize the performance of React contexts to reduce rerenders?](#how-would-one-optimize-the-performance-of-react-contexts-to-reduce-rerenders) |
 | 32 | [What are higher order components in React?](#what-are-higher-order-components-in-react) |
 | 33 | [Explain one-way data flow of React and its benefits](#explain-one-way-data-flow-of-react-and-its-benefits) |
 | 34 | [How do you handle asynchronous data loading in React applications?](#how-do-you-handle-asynchronous-data-loading-in-react-applications) |
@@ -656,9 +656,9 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-31. ### How would one optimise the performance of React contexts to reduce rerenders?
+31. ### How would one optimize the performance of React contexts to reduce rerenders?
 
-    <!-- Update here: /questions/how-would-one-optimise-the-performance-of-react-contexts-to-reduce-rerenders/en-US.mdx -->
+    <!-- Update here: /questions/how-would-one-optimize-the-performance-of-react-contexts-to-reduce-rerenders/en-US.mdx -->
 
     To optimize the performance of React contexts and reduce rerenders, you can use techniques such as memoizing context values, splitting contexts, and using selectors. Memoizing context values with `useMemo` ensures that the context value only changes when its dependencies change. Splitting contexts allows you to isolate state changes to specific parts of your application. Using selectors with libraries like `use-context-selector` can help you only rerender components that actually need the updated context value.
     
@@ -666,11 +666,11 @@ Curated top React.js interview questions with high quality answers for acing you
     const value = useMemo(() => ({ state, dispatch }), [state, dispatch]);
     ```
 
-    <!-- Update here: /questions/how-would-one-optimise-the-performance-of-react-contexts-to-reduce-rerenders/en-US.mdx -->
+    <!-- Update here: /questions/how-would-one-optimize-the-performance-of-react-contexts-to-reduce-rerenders/en-US.mdx -->
 
     <br>
 
-    > Read the [detailed answer](https://greatfrontend.com/questions/quiz/how-would-one-optimise-the-performance-of-react-contexts-to-reduce-rerenders) on [GreatFrontEnd](https://greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://greatfrontend.com/questions/quiz/how-would-one-optimize-the-performance-of-react-contexts-to-reduce-rerenders) on [GreatFrontEnd](https://greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>

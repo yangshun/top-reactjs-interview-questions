@@ -2,16 +2,14 @@
   "slug": "what-are-error-boundaries-in-react-for",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
+  "topics": ["react"],
   "importance": "low",
   "ranking": 240,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "intermediate"
 }

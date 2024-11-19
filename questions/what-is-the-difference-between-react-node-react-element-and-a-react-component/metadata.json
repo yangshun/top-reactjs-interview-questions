@@ -2,16 +2,14 @@
   "slug": "what-is-the-difference-between-react-node-react-element-and-a-react-component",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "medium",
   "ranking": 20,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "basics"
 }

@@ -2,16 +2,14 @@
   "slug": "what-are-some-pitfalls-about-using-context-in-react",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "medium",
   "ranking": 80,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "basics"
 }

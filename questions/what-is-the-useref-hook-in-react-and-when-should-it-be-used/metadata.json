@@ -2,16 +2,14 @@
   "slug": "what-is-the-useref-hook-in-react-and-when-should-it-be-used",
   "languages": [],
   "companies": [],
-  "premium": false,
+  "access": "free",
   "duration": 5,
   "published": true,
   "featured": true,
   "category": "react",
-  "topics": [
-    "react"
-  ],
-  "importance": "low",
+  "topics": ["react"],
+  "importance": "medium",
   "ranking": 140,
-  "difficulty": "easy",
+  "difficulty": "medium",
   "section": "hooks"
 }
