@@ -8,6 +8,7 @@
   "featured": true,
   "category": "react",
   "topics": ["react"],
+  "frameworks": ["react"],
   "importance": "high",
   "ranking": 460,
   "difficulty": "hard",
