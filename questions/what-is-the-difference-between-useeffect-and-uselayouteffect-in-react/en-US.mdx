@@ -1,3 +1,58 @@
 ---
 title: What is the difference between `useEffect` and `useLayoutEffect` in React?
 ---
+### **TL;DR**
+- **`useEffect`**: Executes **after** the screen is painted. Use for non-blocking side effects (e.g., data fetching, subscriptions).
+- **`useLayoutEffect`**: Executes **before** the screen is painted. Use for DOM measurements or updates requiring precision before rendering.
+- **Key Rule**: Prefer `useEffect` unless precise DOM updates are needed before paint.
+
+---
+
+### **What is the difference between `useEffect` and `useLayoutEffect` in React?**
+
+1. **Execution Timing**:  
+   - **`useEffect`**: Runs **after** the browser paints the screen. It ensures that side effects do not block the browser's rendering process.  
+   - **`useLayoutEffect`**: Runs **before** the browser paints, ensuring DOM updates or measurements are complete before rendering is visible to the user.
+
+2. **Use Cases**:  
+   - **`useEffect`**:  
+     - Fetching data from APIs.  
+     - Setting up event listeners, timers, or subscriptions.  
+     - Logging or analytics.  
+   - **`useLayoutEffect`**:  
+     - Measuring DOM elements (e.g., width, height).  
+     - Synchronizing animations with DOM updates.  
+     - Applying immediate DOM styles or modifications.
+
+3. **Performance Impact**:  
+   - **`useEffect`**: Non-blocking, does not delay rendering, making it more performance-friendly for most scenarios.  
+   - **`useLayoutEffect`**: Can block rendering and should be used sparingly to avoid performance bottlenecks.
+
+4. **Common Rule**:  
+   - Use **`useEffect`** for most cases.  
+   - Use **`useLayoutEffect`** only when precise DOM operations must occur before rendering.
+
+---
+
+### **Example Code**
+
+```jsx
+import React, { useEffect, useLayoutEffect, useRef } from 'react';
+
+function Example() {
+  const ref = useRef();
+
+  useEffect(() => {
+    console.log('useEffect: DOM is painted');
+  });
+
+  useLayoutEffect(() => {
+    console.log('useLayoutEffect: Before paint');
+    ref.current.style.color = 'red'; // Immediate DOM update
+  });
+
+  return <div ref={ref}>Hello, World!</div>;
+}
+```
+
+---
