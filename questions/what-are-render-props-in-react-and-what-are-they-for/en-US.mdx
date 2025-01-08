@@ -12,8 +12,8 @@ class DataFetcher extends React.Component {
 
   componentDidMount() {
     fetch(this.props.url)
-      .then(response => response.json())
-      .then(data => this.setState({ data }));
+      .then((response) => response.json())
+      .then((data) => this.setState({ data }));
   }
 
   render() {
@@ -22,9 +22,10 @@ class DataFetcher extends React.Component {
 }
 
 // Usage
-<DataFetcher url="/api/data" render={data => (
-  <div>{data ? data.name : 'Loading...'}</div>
-)} />
+<DataFetcher
+  url="/api/data"
+  render={(data) => <div>{data ? data.name : 'Loading...'}</div>}
+/>;
 ```
 
 ---
@@ -58,7 +59,7 @@ class MouseTracker extends React.Component {
   handleMouseMove = (event) => {
     this.setState({
       x: event.clientX,
-      y: event.clientY
+      y: event.clientY,
     });
   };
 
@@ -72,9 +73,13 @@ class MouseTracker extends React.Component {
 }
 
 // Usage
-<MouseTracker render={({ x, y }) => (
-  <h1>The mouse position is ({x}, {y})</h1>
-)} />
+<MouseTracker
+  render={({ x, y }) => (
+    <h1>
+      The mouse position is ({x}, {y})
+    </h1>
+  )}
+/>;
 ```
 
 In this example, `MouseTracker` is a component that tracks the mouse position and passes the coordinates to the `render` prop function. The `render` prop function then determines how to display the coordinates.
@@ -90,4 +95,3 @@ In this example, `MouseTracker` is a component that tracks the mouse position an
 - [React documentation on render props](https://reactjs.org/docs/render-props.html)
 - [Render props vs. higher-order components](https://reactjs.org/docs/higher-order-components.html#convention-wrap-the-display-name-for-easy-debugging)
 - [Advanced React patterns](https://kentcdodds.com/blog/compound-components-with-react-hooks)
-

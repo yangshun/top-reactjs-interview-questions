@@ -39,7 +39,7 @@ class ErrorBoundary extends Component {
 
   componentDidCatch(error, errorInfo) {
     // You can also log the error to an error reporting service
-    console.error("Error caught by ErrorBoundary: ", error, errorInfo);
+    console.error('Error caught by ErrorBoundary: ', error, errorInfo);
   }
 
   render() {
@@ -48,7 +48,7 @@ class ErrorBoundary extends Component {
       return <h1>Something went wrong.</h1>;
     }
 
-    return this.props.children; 
+    return this.props.children;
   }
 }
 
@@ -85,4 +85,3 @@ Error boundaries have some limitations:
 - [React documentation on error boundaries](https://reactjs.org/docs/error-boundaries.html)
 - [Handling errors in React](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html)
 - [Error boundaries in React 16](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html)
-

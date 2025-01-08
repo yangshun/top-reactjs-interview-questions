@@ -19,12 +19,13 @@ State is a built-in object in React components that holds data or information ab
 - State changes are asynchronous and should be done using the `setState` method in class components or the updater function returned by `useState` in functional components
 
 Example of state in a class component:
+
 ```jsx
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
     };
   }
 
@@ -44,6 +45,7 @@ class MyComponent extends React.Component {
 ```
 
 Example of state in a functional component:
+
 ```jsx
 import React, { useState } from 'react';
 
@@ -68,6 +70,7 @@ Props (short for properties) are read-only attributes passed from a parent compo
 - Props can be used to pass functions as well, enabling child components to communicate with parent components
 
 Example of props in a class component:
+
 ```jsx
 class ParentComponent extends React.Component {
   render() {
@@ -83,6 +86,7 @@ class ChildComponent extends React.Component {
 ```
 
 Example of props in a functional component:
+
 ```jsx
 function ParentComponent() {
   return <ChildComponent message="Hello, World!" />;
@@ -104,4 +108,3 @@ function ChildComponent(props) {
 - [React documentation on state and lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 - [React documentation on components and props](https://reactjs.org/docs/components-and-props.html)
 - [React Hooks documentation](https://reactjs.org/docs/hooks-intro.html)
-

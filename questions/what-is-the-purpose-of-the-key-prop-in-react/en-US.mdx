@@ -7,9 +7,9 @@ title: What is the purpose of the `key` prop in React?
 The `key` prop in React is used to uniquely identify elements in a list. It helps React optimize rendering by efficiently updating and reordering elements. Without a unique `key`, React may re-render elements unnecessarily, leading to performance issues and bugs.
 
 ```jsx
-{items.map(item => (
-  <ListItem key={item.id} value={item.value} />
-))}
+{
+  items.map((item) => <ListItem key={item.id} value={item.value} />);
+}
 ```
 
 ---
@@ -34,13 +34,13 @@ When rendering a list of elements, you should provide a unique `key` for each el
 const items = [
   { id: 1, value: 'Item 1' },
   { id: 2, value: 'Item 2' },
-  { id: 3, value: 'Item 3' }
+  { id: 3, value: 'Item 3' },
 ];
 
 function ItemList() {
   return (
     <ul>
-      {items.map(item => (
+      {items.map((item) => (
         <ListItem key={item.id} value={item.value} />
       ))}
     </ul>
@@ -59,14 +59,14 @@ function ListItem({ value }) {
 
 ```jsx
 // Bad practice: using array index as key
-{items.map((item, index) => (
-  <ListItem key={index} value={item.value} />
-))}
+{
+  items.map((item, index) => <ListItem key={index} value={item.value} />);
+}
 
 // Good practice: using a unique identifier as key
-{items.map(item => (
-  <ListItem key={item.id} value={item.value} />
-))}
+{
+  items.map((item) => <ListItem key={item.id} value={item.value} />);
+}
 ```
 
 ## Further reading
@@ -74,4 +74,3 @@ function ListItem({ value }) {
 - [React documentation on keys](https://reactjs.org/docs/lists-and-keys.html#keys)
 - [Why keys are important in React](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318)
 - [React's reconciliation algorithm](https://reactjs.org/docs/reconciliation.html)
-

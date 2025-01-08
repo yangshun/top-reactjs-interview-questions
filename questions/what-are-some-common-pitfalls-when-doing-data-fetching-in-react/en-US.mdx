@@ -21,12 +21,12 @@ const [error, setError] = useState(null);
 
 useEffect(() => {
   fetch('https://api.example.com/data')
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       setData(data);
       setLoading(false);
     })
-    .catch(error => {
+    .catch((error) => {
       setError(error);
       setLoading(false);
     });
@@ -46,14 +46,14 @@ useEffect(() => {
   let isMounted = true;
 
   fetch('https://api.example.com/data')
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       if (isMounted) {
         setData(data);
         setLoading(false);
       }
     })
-    .catch(error => {
+    .catch((error) => {
       if (isMounted) {
         setError(error);
         setLoading(false);
@@ -75,9 +75,9 @@ In class components, data fetching should be done in `componentDidMount`. In fun
 class MyComponent extends React.Component {
   componentDidMount() {
     fetch('https://api.example.com/data')
-      .then(response => response.json())
-      .then(data => this.setState({ data, loading: false }))
-      .catch(error => this.setState({ error, loading: false }));
+      .then((response) => response.json())
+      .then((data) => this.setState({ data, loading: false }))
+      .catch((error) => this.setState({ error, loading: false }));
   }
 }
 
@@ -85,9 +85,9 @@ class MyComponent extends React.Component {
 const MyComponent = () => {
   useEffect(() => {
     fetch('https://api.example.com/data')
-      .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => setError(error));
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => setError(error));
   }, []);
 };
 ```
@@ -99,9 +99,9 @@ The dependency array in `useEffect` determines when the effect runs. Ignoring it
 ```jsx
 useEffect(() => {
   fetch('https://api.example.com/data')
-    .then(response => response.json())
-    .then(data => setData(data))
-    .catch(error => setError(error));
+    .then((response) => response.json())
+    .then((data) => setData(data))
+    .catch((error) => setError(error));
 }, []); // Empty array means this effect runs once after the initial render
 ```
 
@@ -112,7 +112,9 @@ Fetching data directly in the render method can cause infinite loops and perform
 ```jsx
 // Incorrect
 const MyComponent = () => {
-  const data = fetch('https://api.example.com/data').then(response => response.json());
+  const data = fetch('https://api.example.com/data').then((response) =>
+    response.json(),
+  );
   return <div>{JSON.stringify(data)}</div>;
 };
 
@@ -120,9 +122,9 @@ const MyComponent = () => {
 const MyComponent = () => {
   useEffect(() => {
     fetch('https://api.example.com/data')
-      .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => setError(error));
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => setError(error));
   }, []);
 };
 ```
@@ -132,4 +134,3 @@ const MyComponent = () => {
 - [React documentation on hooks](https://reactjs.org/docs/hooks-intro.html)
 - [React documentation on `useEffect`](https://reactjs.org/docs/hooks-effect.html)
 - [Handling async requests in React](https://www.robinwieruch.de/react-hooks-fetch-data)
-

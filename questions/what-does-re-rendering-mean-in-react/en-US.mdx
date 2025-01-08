@@ -17,6 +17,7 @@ Re-rendering in React is the process by which a component updates its output to 
 ### When does re-rendering occur?
 
 Re-rendering occurs in the following scenarios:
+
 - When a component's state changes using `setState`
 - When a component receives new props from its parent component
 - When the parent component re-renders, causing its child components to re-render as well
@@ -48,6 +49,7 @@ function Counter() {
 ```
 
 In this example:
+
 - The `Counter` component has a state variable `count`.
 - When the button is clicked, `setCount` updates the state, triggering a re-render.
 - The `render` method is called again, and the new virtual DOM is compared to the previous one.
@@ -56,6 +58,7 @@ In this example:
 ### Performance considerations
 
 Re-rendering can be expensive, especially for complex components or large applications. To optimize performance, React provides several techniques:
+
 - **PureComponent**: A base class that implements a shallow comparison of props and state to prevent unnecessary re-renders.
 - **React.memo**: A higher-order component that memoizes the result of a component's render to avoid re-rendering if the props haven't changed.
 - **useMemo and useCallback**: Hooks that memoize values and functions to prevent unnecessary re-renders.
@@ -66,4 +69,3 @@ Re-rendering can be expensive, especially for complex components or large applic
 - [React documentation on state and lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 - [React.memo](https://reactjs.org/docs/react-api.html#reactmemo)
 - [Optimizing performance in React](https://reactjs.org/docs/optimizing-performance.html)
-

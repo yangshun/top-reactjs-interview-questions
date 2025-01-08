@@ -37,7 +37,11 @@ class ControlledComponent extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <label>
           Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input
+            type="text"
+            value={this.state.value}
+            onChange={this.handleChange}
+          />
         </label>
         <input type="submit" value="Submit" />
       </form>
@@ -100,4 +104,3 @@ class UncontrolledComponent extends React.Component {
 - [React documentation on controlled components](https://reactjs.org/docs/forms.html#controlled-components)
 - [React documentation on uncontrolled components](https://reactjs.org/docs/uncontrolled-components.html)
 - [React refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
-

@@ -40,9 +40,7 @@ function Counter() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }
@@ -57,4 +55,3 @@ In this example, when the button is clicked, the state `count` is updated. React
 - [React documentation on reconciliation](https://reactjs.org/docs/reconciliation.html)
 - [Understanding the virtual DOM](https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060)
 - [React's diffing algorithm](https://reactjs.org/docs/faq-internals.html#how-does-reacts-diffing-algorithm-work)
-

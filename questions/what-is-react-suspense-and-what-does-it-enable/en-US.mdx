@@ -55,7 +55,9 @@ import React, { Suspense } from 'react';
 import { useQuery } from 'react-query';
 
 function fetchData() {
-  return fetch('https://api.example.com/data').then(response => response.json());
+  return fetch('https://api.example.com/data').then((response) =>
+    response.json(),
+  );
 }
 
 function DataComponent() {
@@ -86,4 +88,3 @@ In this example, `react-query` is used to fetch data, and `Suspense` provides a 
 - [React.lazy documentation](https://reactjs.org/docs/code-splitting.html#reactlazy)
 - [React Query documentation](https://react-query.tanstack.com/)
 - [Relay documentation](https://relay.dev/docs/en/experimental/api-reference#suspense)
-

@@ -17,11 +17,7 @@ function WelcomeDialog() {
 }
 
 function Dialog(props) {
-  return (
-    <div className="dialog">
-      {props.children}
-    </div>
-  );
+  return <div className="dialog">{props.children}</div>;
 }
 ```
 
@@ -41,11 +37,7 @@ One common way to use composition is by passing components as children to other 
 
 ```jsx
 function Dialog(props) {
-  return (
-    <div className="dialog">
-      {props.children}
-    </div>
-  );
+  return <div className="dialog">{props.children}</div>;
 }
 
 function WelcomeDialog() {
@@ -66,23 +58,14 @@ Another way to achieve composition is by passing components as props. This allow
 function SplitPane(props) {
   return (
     <div className="split-pane">
-      <div className="split-pane-left">
-        {props.left}
-      </div>
-      <div className="split-pane-right">
-        {props.right}
-      </div>
+      <div className="split-pane-left">{props.left}</div>
+      <div className="split-pane-right">{props.right}</div>
     </div>
   );
 }
 
 function App() {
-  return (
-    <SplitPane
-      left={<Contacts />}
-      right={<Chat />}
-    />
-  );
+  return <SplitPane left={<Contacts />} right={<Chat />} />;
 }
 ```
 
@@ -102,4 +85,3 @@ function App() {
 - [React documentation on composition vs inheritance](https://reactjs.org/docs/composition-vs-inheritance.html)
 - [React patterns: Composition](https://reactpatterns.com/#composition)
 - [Medium article on React composition](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
-

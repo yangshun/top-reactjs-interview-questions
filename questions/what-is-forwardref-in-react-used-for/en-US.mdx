@@ -9,9 +9,7 @@ title: What is `forwardRef()` in React used for?
 ```jsx
 import React, { forwardRef } from 'react';
 
-const MyComponent = forwardRef((props, ref) => (
-  <input ref={ref} {...props} />
-));
+const MyComponent = forwardRef((props, ref) => <input ref={ref} {...props} />);
 ```
 
 ---
@@ -41,9 +39,7 @@ Here is a simple example demonstrating how to use `forwardRef()`:
 import React, { forwardRef, useRef } from 'react';
 
 // Define a functional component and wrap it with forwardRef
-const MyInput = forwardRef((props, ref) => (
-  <input ref={ref} {...props} />
-));
+const MyInput = forwardRef((props, ref) => <input ref={ref} {...props} />);
 
 const ParentComponent = () => {
   const inputRef = useRef(null);
@@ -84,4 +80,3 @@ In this example:
 - [React documentation on `forwardRef()`](https://reactjs.org/docs/forwarding-refs.html)
 - [Using the `useRef` Hook](https://reactjs.org/docs/hooks-reference.html#useref)
 - [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
-

@@ -28,10 +28,8 @@ const Modal = ({ isOpen, children }) => {
   if (!isOpen) return null;
 
   return ReactDOM.createPortal(
-    <div className="modal">
-      {children}
-    </div>,
-    document.getElementById('modal-root')
+    <div className="modal">{children}</div>,
+    document.getElementById('modal-root'),
   );
 };
 ```
@@ -55,7 +53,7 @@ const Tooltip = ({ text, targetRef }) => {
     <div className="tooltip" style={tooltipStyle}>
       {text}
     </div>,
-    document.body
+    document.body,
   );
 };
 ```
@@ -72,10 +70,8 @@ const Dropdown = ({ isOpen, children }) => {
   if (!isOpen) return null;
 
   return ReactDOM.createPortal(
-    <div className="dropdown">
-      {children}
-    </div>,
-    document.body
+    <div className="dropdown">{children}</div>,
+    document.body,
   );
 };
 ```
@@ -99,4 +95,3 @@ ReactDOM.createPortal(child, container);
 - [React Portals documentation](https://reactjs.org/docs/portals.html)
 - [Building a modal with React Portals](https://blog.logrocket.com/building-a-modal-with-react-portals/)
 - [Using React Portals for better accessibility](https://www.smashingmagazine.com/2020/03/react-portals-accessibility/)
-

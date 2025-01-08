@@ -28,30 +28,28 @@ Here's a simple example to illustrate the concept:
 
 1. **Server-side rendering**: The server generates the following HTML:
 
-    ```html
-    <div id="root">
-      <button>Click me</button>
-    </div>
-    ```
+   ```html
+   <div id="root">
+     <button>Click me</button>
+   </div>
+   ```
 
 2. **Client-side hydration**: When the HTML is sent to the client, React hydrates it with the following code:
 
-    ```jsx
-    import React from 'react';
-    import ReactDOM from 'react-dom';
+   ```jsx
+   import React from 'react';
+   import ReactDOM from 'react-dom';
 
-    function App() {
-      const handleClick = () => {
-        alert('Button clicked!');
-      };
+   function App() {
+     const handleClick = () => {
+       alert('Button clicked!');
+     };
 
-      return (
-        <button onClick={handleClick}>Click me</button>
-      );
-    }
+     return <button onClick={handleClick}>Click me</button>;
+   }
 
-    ReactDOM.hydrate(<App />, document.getElementById('root'));
-    ```
+   ReactDOM.hydrate(<App />, document.getElementById('root'));
+   ```
 
 In this example, the server sends the static HTML with a button to the client. React then hydrates the button by attaching the `onClick` event listener, making it interactive.
 
@@ -71,4 +69,3 @@ In this example, the server sends the static HTML with a button to the client. R
 - [React documentation on hydration](https://reactjs.org/docs/react-dom.html#hydrate)
 - [Server-side rendering in React](https://reactjs.org/docs/react-dom-server.html)
 - [Next.js documentation on hydration](https://nextjs.org/docs/basic-features/pages#hydration)
-

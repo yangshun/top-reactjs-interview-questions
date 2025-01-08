@@ -8,7 +8,7 @@ The callback function argument format of `setState()` in React is used to ensure
 
 ```javascript
 this.setState((prevState, props) => ({
-  counter: prevState.counter + props.increment
+  counter: prevState.counter + props.increment,
 }));
 ```
 
@@ -27,7 +27,7 @@ The callback function format of `setState()` takes a function as an argument. Th
 ```javascript
 this.setState((prevState, props) => {
   return {
-    counter: prevState.counter + props.increment
+    counter: prevState.counter + props.increment,
   };
 });
 ```
@@ -50,7 +50,7 @@ class Counter extends React.Component {
 
   incrementCounter = () => {
     this.setState((prevState, props) => ({
-      counter: prevState.counter + 1
+      counter: prevState.counter + 1,
     }));
   };
 
@@ -72,4 +72,3 @@ In this example, using the callback function format ensures that the `counter` s
 - [React Docs: State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 - [React Docs: setState()](https://reactjs.org/docs/react-component.html#setstate)
 - [React Docs: Handling Events](https://reactjs.org/docs/handling-events.html)
-

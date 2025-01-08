@@ -43,13 +43,13 @@ Here's a simple example to illustrate how React Fiber improves rendering perform
 ```jsx
 class MyComponent extends React.Component {
   state = {
-    items: Array.from({ length: 10000 }, (_, i) => i)
+    items: Array.from({ length: 10000 }, (_, i) => i),
   };
 
   render() {
     return (
       <div>
-        {this.state.items.map(item => (
+        {this.state.items.map((item) => (
           <div key={item}>{item}</div>
         ))}
       </div>
@@ -65,4 +65,3 @@ With the previous stack-based algorithm, rendering this component could cause th
 - [React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture)
 - [Introducing React Fiber](https://reactjs.org/blog/2017/09/26/react-v16.0.html)
 - [React Docs: Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html)
-
