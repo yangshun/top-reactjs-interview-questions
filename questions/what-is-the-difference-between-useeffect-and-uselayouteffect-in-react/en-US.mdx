@@ -1,40 +1,15 @@
 ---
 title: What is the difference between `useEffect` and `useLayoutEffect` in React?
 ---
-### **TL;DR**
-- **`useEffect`**: Executes **after** the screen is painted. Use for non-blocking side effects (e.g., data fetching, subscriptions).
-- **`useLayoutEffect`**: Executes **before** the screen is painted. Use for DOM measurements or updates requiring precision before rendering.
-- **Key Rule**: Prefer `useEffect` unless precise DOM updates are needed before paint.
 
----
+## TL;DR
 
-### **What is the difference between `useEffect` and `useLayoutEffect` in React?**
+`useEffect` and `useLayoutEffect` are React hooks used to handle side effects in functional components, but they differ in timing and use cases:
 
-1. **Execution Timing**:  
-   - **`useEffect`**: Runs **after** the browser paints the screen. It ensures that side effects do not block the browser's rendering process.  
-   - **`useLayoutEffect`**: Runs **before** the browser paints, ensuring DOM updates or measurements are complete before rendering is visible to the user.
+- `useEffect`: Runs asynchronously after the DOM has been painted. It is suitable for tasks like data fetching, subscriptions, or logging.
+- `useLayoutEffect`: Runs synchronously after DOM mutations but before the browser paints. Use it for tasks like measuring DOM elements or synchronizing the UI with the DOM.
 
-2. **Use Cases**:  
-   - **`useEffect`**:  
-     - Fetching data from APIs.  
-     - Setting up event listeners, timers, or subscriptions.  
-     - Logging or analytics.  
-   - **`useLayoutEffect`**:  
-     - Measuring DOM elements (e.g., width, height).  
-     - Synchronizing animations with DOM updates.  
-     - Applying immediate DOM styles or modifications.
-
-3. **Performance Impact**:  
-   - **`useEffect`**: Non-blocking, does not delay rendering, making it more performance-friendly for most scenarios.  
-   - **`useLayoutEffect`**: Can block rendering and should be used sparingly to avoid performance bottlenecks.
-
-4. **Common Rule**:  
-   - Use **`useEffect`** for most cases.  
-   - Use **`useLayoutEffect`** only when precise DOM operations must occur before rendering.
-
----
-
-### **Example Code**
+Code example:
 
 ```jsx
 import React, { useEffect, useLayoutEffect, useRef } from 'react';
@@ -43,16 +18,99 @@ function Example() {
   const ref = useRef();
 
   useEffect(() => {
-    console.log('useEffect: DOM is painted');
+    console.log('useEffect: Runs after DOM paint');
   });
 
   useLayoutEffect(() => {
-    console.log('useLayoutEffect: Before paint');
-    ref.current.style.color = 'red'; // Immediate DOM update
+    console.log('useLayoutEffect: Runs before DOM paint');
+    console.log('Element width:', ref.current.offsetWidth);
   });
 
-  return <div ref={ref}>Hello, World!</div>;
+  return <div ref={ref}>Hello</div>;
 }
 ```
 
 ---
+
+## What is `useEffect`?
+
+`useEffect` is a React hook used for managing side effects in functional components. Side effects include operations like fetching data, updating a subscription, or interacting with the browser's DOM API.
+
+- It runs asynchronously after the DOM has been updated and painted.
+- It does not block the browser from updating the UI.
+- By default, it runs after every render, but dependencies can control its execution.
+
+### Code example
+
+```jsx
+import React, { useEffect } from 'react';
+
+function Example() {
+  useEffect(() => {
+    console.log('Component mounted or updated');
+    return () => console.log('Cleanup on unmount or dependency change');
+  }, []); // Runs only on mount and unmount
+
+  return <div>Hello, World!</div>;
+}
+```
+
+### Common use cases
+
+- Fetching data from an API
+- Setting up subscriptions (e.g., WebSocket connections)
+- Logging or analytics tracking
+- Adding and removing event listeners
+
+## What is `useLayoutEffect`?
+
+`useLayoutEffect` is a React hook similar to `useEffect`, but it differs in timing. It runs synchronously after DOM mutations and before the browser paints the screen.
+
+- It is suitable for tasks where the DOM needs to be accessed before the paint.
+- It can block rendering, so it should be used sparingly.
+
+### Code example
+
+```jsx
+import React, { useLayoutEffect, useRef } from 'react';
+
+function Example() {
+  const ref = useRef();
+
+  useLayoutEffect(() => {
+    console.log('Element dimensions:', ref.current.getBoundingClientRect());
+  });
+
+  return <div ref={ref}>Hello</div>;
+}
+```
+
+### Common use cases
+
+- Measuring DOM elements (e.g., for animations or layouts)
+- Adjusting DOM properties or styles based on calculations
+- Fixing UI synchronization issues
+
+## key differences between `useEffect` and `useLayoutEffect`
+
+### Timing
+
+- `useEffect`: Executes after the browser has painted the UI.
+- `useLayoutEffect`: Executes before the browser paints, right after DOM changes.
+
+### Blocking behavior
+
+- `useEffect`: Non-blocking, runs asynchronously.
+- `useLayoutEffect`: Blocking, runs synchronously.
+
+### Use case examples
+
+- `useEffect`: Fetching data, updating state, or adding event listeners.
+- `useLayoutEffect`: Measuring DOM elements, managing animations, or solving layout issues.
+
+## Further reading
+
+- [React Hooks documentation](https://react.dev/reference/react/hooks)
+- [React `useEffect` API documentation](https://react.dev/reference/react/useEffect)
+- [React `useLayoutEffect` API documentation](https://react.dev/reference/react/useLayoutEffect)
+- [Differences between `useEffect` and `useLayoutEffect`](https://kentcdodds.com/blog/useeffect-vs-uselayouteffect)
