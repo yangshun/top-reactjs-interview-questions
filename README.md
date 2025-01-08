@@ -18,44 +18,46 @@ Curated top React.js interview questions with high quality answers for acing you
 | 8 | [What are some pitfalls about using context in React?](#what-are-some-pitfalls-about-using-context-in-react) |
 | 9 | [What are the benefits of using hooks in React?](#what-are-the-benefits-of-using-hooks-in-react) |
 | 10 | [What are the rules of React hooks?](#what-are-the-rules-of-react-hooks) |
-| 11 | [What is the purpose of callback function argument format of `setState()` in React and when should it be used?](#what-is-the-purpose-of-callback-function-argument-format-of-setstate-in-react-and-when-should-it-be-used) |
-| 12 | [What does the dependency array of `useEffect` affect?](#what-does-the-dependency-array-of-useeffect-affect) |
-| 13 | [What is the `useRef` hook in React and when should it be used?](#what-is-the-useref-hook-in-react-and-when-should-it-be-used) |
-| 14 | [What is the `useCallback` hook in React and when should it be used?](#what-is-the-usecallback-hook-in-react-and-when-should-it-be-used) |
-| 15 | [What is the `useMemo` hook in React and when should it be used?](#what-is-the-usememo-hook-in-react-and-when-should-it-be-used) |
-| 16 | [What is the `useReducer` hook in React and when should it be used?](#what-is-the-usereducer-hook-in-react-and-when-should-it-be-used) |
-| 17 | [What is the `useId` hook in React and when should it be used?](#what-is-the-useid-hook-in-react-and-when-should-it-be-used) |
-| 18 | [What does re-rendering mean in React?](#what-does-re-rendering-mean-in-react) |
-| 19 | [What are React Fragments used for?](#what-are-react-fragments-used-for) |
-| 20 | [What is `forwardRef()` in React used for?](#what-is-forwardref-in-react-used-for) |
-| 21 | [How do you reset a component's state in React?](#how-do-you-reset-a-components-state-in-react) |
-| 22 | [Why does React recommend against mutating state?](#why-does-react-recommend-against-mutating-state) |
-| 23 | [What are error boundaries in React for?](#what-are-error-boundaries-in-react-for) |
-| 24 | [How do you test React applications?](#how-do-you-test-react-applications) |
-| 25 | [Explain what React hydration is](#explain-what-react-hydration-is) |
-| 26 | [What are React Portals used for?](#what-are-react-portals-used-for) |
-| 27 | [How do you debug React applications?](#how-do-you-debug-react-applications) |
-| 28 | [What is React strict mode and what are its benefits?](#what-is-react-strict-mode-and-what-are-its-benefits) |
-| 29 | [How do you localize React applications?](#how-do-you-localize-react-applications) |
-| 30 | [What is code splitting in a React application?](#what-is-code-splitting-in-a-react-application) |
-| 31 | [How would one optimize the performance of React contexts to reduce rerenders?](#how-would-one-optimize-the-performance-of-react-contexts-to-reduce-rerenders) |
-| 32 | [What are higher order components in React?](#what-are-higher-order-components-in-react) |
-| 33 | [Explain one-way data flow of React and its benefits](#explain-one-way-data-flow-of-react-and-its-benefits) |
-| 34 | [How do you handle asynchronous data loading in React applications?](#how-do-you-handle-asynchronous-data-loading-in-react-applications) |
-| 35 | [Explain server-side rendering of React applications and its benefits?](#explain-server-side-rendering-of-react-applications-and-its-benefits) |
-| 36 | [Explain static generation of React applications and its benefits?](#explain-static-generation-of-react-applications-and-its-benefits) |
-| 37 | [Explain the presentational vs container component pattern in React](#explain-the-presentational-vs-container-component-pattern-in-react) |
-| 38 | [What are some common pitfalls when doing data fetching in React?](#what-are-some-common-pitfalls-when-doing-data-fetching-in-react) |
-| 39 | [What are render props in React and what are they for?](#what-are-render-props-in-react-and-what-are-they-for) |
-| 40 | [What are some React anti-patterns?](#what-are-some-react-anti-patterns) |
-| 41 | [How do you decide between using React state, context, and external state managers?](#how-do-you-decide-between-using-react-state-context-and-external-state-managers) |
-| 42 | [Explain the composition pattern in React](#explain-the-composition-pattern-in-react) |
-| 43 | [What is virtual DOM in React?](#what-is-virtual-dom-in-react) |
-| 44 | [How does virtual DOM in React work? What are its benefits and downsides?](#how-does-virtual-dom-in-react-work-what-are-its-benefits-and-downsides) |
-| 45 | [What is React Fiber and how is it an improvement over the previous approach?](#what-is-react-fiber-and-how-is-it-an-improvement-over-the-previous-approach) |
-| 46 | [What is reconciliation in React?](#what-is-reconciliation-in-react) |
-| 47 | [What is React Suspense and what does it enable?](#what-is-react-suspense-and-what-does-it-enable) |
-| 48 | [Explain what happens when `setState` is called in React](#explain-what-happens-when-setstate-is-called-in-react) |
+| 11 | [What is the difference between `useEffect` and `useLayoutEffect` in React?](#what-is-the-difference-between-useeffect-and-uselayouteffect-in-react) |
+| 12 | [What is the purpose of callback function argument format of `setState()` in React and when should it be used?](#what-is-the-purpose-of-callback-function-argument-format-of-setstate-in-react-and-when-should-it-be-used) |
+| 13 | [What does the dependency array of `useEffect` affect?](#what-does-the-dependency-array-of-useeffect-affect) |
+| 14 | [What is the `useRef` hook in React and when should it be used?](#what-is-the-useref-hook-in-react-and-when-should-it-be-used) |
+| 15 | [What is the `useCallback` hook in React and when should it be used?](#what-is-the-usecallback-hook-in-react-and-when-should-it-be-used) |
+| 16 | [What is the `useMemo` hook in React and when should it be used?](#what-is-the-usememo-hook-in-react-and-when-should-it-be-used) |
+| 17 | [What is the `useReducer` hook in React and when should it be used?](#what-is-the-usereducer-hook-in-react-and-when-should-it-be-used) |
+| 18 | [What is the `useId` hook in React and when should it be used?](#what-is-the-useid-hook-in-react-and-when-should-it-be-used) |
+| 19 | [What does re-rendering mean in React?](#what-does-re-rendering-mean-in-react) |
+| 20 | [What are React Fragments used for?](#what-are-react-fragments-used-for) |
+| 21 | [What is `forwardRef()` in React used for?](#what-is-forwardref-in-react-used-for) |
+| 22 | [How do you reset a component's state in React?](#how-do-you-reset-a-components-state-in-react) |
+| 23 | [Why does React recommend against mutating state?](#why-does-react-recommend-against-mutating-state) |
+| 24 | [What are error boundaries in React for?](#what-are-error-boundaries-in-react-for) |
+| 25 | [How do you test React applications?](#how-do-you-test-react-applications) |
+| 26 | [Explain what React hydration is](#explain-what-react-hydration-is) |
+| 27 | [What are React Portals used for?](#what-are-react-portals-used-for) |
+| 28 | [How do you debug React applications?](#how-do-you-debug-react-applications) |
+| 29 | [What is React strict mode and what are its benefits?](#what-is-react-strict-mode-and-what-are-its-benefits) |
+| 30 | [How do you localize React applications?](#how-do-you-localize-react-applications) |
+| 31 | [What is code splitting in a React application?](#what-is-code-splitting-in-a-react-application) |
+| 32 | [How would one optimize the performance of React contexts to reduce rerenders?](#how-would-one-optimize-the-performance-of-react-contexts-to-reduce-rerenders) |
+| 33 | [What are higher order components in React?](#what-are-higher-order-components-in-react) |
+| 34 | [What is the Flux pattern and what are its benefits?](#what-is-the-flux-pattern-and-what-are-its-benefits) |
+| 35 | [Explain one-way data flow of React and its benefits](#explain-one-way-data-flow-of-react-and-its-benefits) |
+| 36 | [How do you handle asynchronous data loading in React applications?](#how-do-you-handle-asynchronous-data-loading-in-react-applications) |
+| 37 | [Explain server-side rendering of React applications and its benefits?](#explain-server-side-rendering-of-react-applications-and-its-benefits) |
+| 38 | [Explain static generation of React applications and its benefits?](#explain-static-generation-of-react-applications-and-its-benefits) |
+| 39 | [Explain the presentational vs container component pattern in React](#explain-the-presentational-vs-container-component-pattern-in-react) |
+| 40 | [What are some common pitfalls when doing data fetching in React?](#what-are-some-common-pitfalls-when-doing-data-fetching-in-react) |
+| 41 | [What are render props in React and what are they for?](#what-are-render-props-in-react-and-what-are-they-for) |
+| 42 | [What are some React anti-patterns?](#what-are-some-react-anti-patterns) |
+| 43 | [How do you decide between using React state, context, and external state managers?](#how-do-you-decide-between-using-react-state-context-and-external-state-managers) |
+| 44 | [Explain the composition pattern in React](#explain-the-composition-pattern-in-react) |
+| 45 | [What is virtual DOM in React?](#what-is-virtual-dom-in-react) |
+| 46 | [How does virtual DOM in React work? What are its benefits and downsides?](#how-does-virtual-dom-in-react-work-what-are-its-benefits-and-downsides) |
+| 47 | [What is React Fiber and how is it an improvement over the previous approach?](#what-is-react-fiber-and-how-is-it-an-improvement-over-the-previous-approach) |
+| 48 | [What is reconciliation in React?](#what-is-reconciliation-in-react) |
+| 49 | [What is React Suspense and what does it enable?](#what-is-react-suspense-and-what-does-it-enable) |
+| 50 | [Explain what happens when `setState` is called in React](#explain-what-happens-when-setstate-is-called-in-react) |
 
 <!-- TABLE_OF_CONTENTS:END -->
 
@@ -141,9 +143,9 @@ Curated top React.js interview questions with high quality answers for acing you
     The `key` prop in React is used to uniquely identify elements in a list. It helps React optimize rendering by efficiently updating and reordering elements. Without a unique `key`, React may re-render elements unnecessarily, leading to performance issues and bugs.
     
     ```jsx
-    {items.map(item => (
-      <ListItem key={item.id} value={item.value} />
-    ))}
+    {
+      items.map((item) => <ListItem key={item.id} value={item.value} />);
+    }
     ```
 
     <!-- Update here: /questions/what-is-the-purpose-of-the-key-prop-in-react/en-US.mdx -->
@@ -236,7 +238,47 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-11. ### What is the purpose of callback function argument format of `setState()` in React and when should it be used?
+11. ### What is the difference between `useEffect` and `useLayoutEffect` in React?
+
+    <!-- Update here: /questions/what-is-the-difference-between-useeffect-and-uselayouteffect-in-react/en-US.mdx -->
+
+    `useEffect` and `useLayoutEffect` are React hooks used to handle side effects in functional components, but they differ in timing and use cases:
+    
+    - `useEffect`: Runs asynchronously after the DOM has been painted. It is suitable for tasks like data fetching, subscriptions, or logging.
+    - `useLayoutEffect`: Runs synchronously after DOM mutations but before the browser paints. Use it for tasks like measuring DOM elements or synchronizing the UI with the DOM.
+    
+    Code example:
+    
+    ```jsx
+    import React, { useEffect, useLayoutEffect, useRef } from 'react';
+    
+    function Example() {
+      const ref = useRef();
+    
+      useEffect(() => {
+        console.log('useEffect: Runs after DOM paint');
+      });
+    
+      useLayoutEffect(() => {
+        console.log('useLayoutEffect: Runs before DOM paint');
+        console.log('Element width:', ref.current.offsetWidth);
+      });
+    
+      return <div ref={ref}>Hello</div>;
+    }
+    ```
+
+    <!-- Update here: /questions/what-is-the-difference-between-useeffect-and-uselayouteffect-in-react/en-US.mdx -->
+
+    <br>
+
+    > Read the [detailed answer](https://greatfrontend.com/questions/quiz/what-is-the-difference-between-useeffect-and-uselayouteffect-in-react) on [GreatFrontEnd](https://greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+
+    [Back to top ↑](#table-of-contents)
+    <br>
+    <br>
+
+12. ### What is the purpose of callback function argument format of `setState()` in React and when should it be used?
 
     <!-- Update here: /questions/what-is-the-purpose-of-callback-function-argument-format-of-setstate-in-react-and-when-should-it-be-used/en-US.mdx -->
 
@@ -244,7 +286,7 @@ Curated top React.js interview questions with high quality answers for acing you
     
     ```javascript
     this.setState((prevState, props) => ({
-      counter: prevState.counter + props.increment
+      counter: prevState.counter + props.increment,
     }));
     ```
 
@@ -258,7 +300,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-12. ### What does the dependency array of `useEffect` affect?
+13. ### What does the dependency array of `useEffect` affect?
 
     <!-- Update here: /questions/what-does-the-dependency-array-of-useeffect-affect/en-US.mdx -->
 
@@ -274,7 +316,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-13. ### What is the `useRef` hook in React and when should it be used?
+14. ### What is the `useRef` hook in React and when should it be used?
 
     <!-- Update here: /questions/what-is-the-useref-hook-in-react-and-when-should-it-be-used/en-US.mdx -->
 
@@ -304,7 +346,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-14. ### What is the `useCallback` hook in React and when should it be used?
+15. ### What is the `useCallback` hook in React and when should it be used?
 
     <!-- Update here: /questions/what-is-the-usecallback-hook-in-react-and-when-should-it-be-used/en-US.mdx -->
 
@@ -326,7 +368,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-15. ### What is the `useMemo` hook in React and when should it be used?
+16. ### What is the `useMemo` hook in React and when should it be used?
 
     <!-- Update here: /questions/what-is-the-usememo-hook-in-react-and-when-should-it-be-used/en-US.mdx -->
 
@@ -346,7 +388,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-16. ### What is the `useReducer` hook in React and when should it be used?
+17. ### What is the `useReducer` hook in React and when should it be used?
 
     <!-- Update here: /questions/what-is-the-usereducer-hook-in-react-and-when-should-it-be-used/en-US.mdx -->
 
@@ -368,7 +410,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-17. ### What is the `useId` hook in React and when should it be used?
+18. ### What is the `useId` hook in React and when should it be used?
 
     <!-- Update here: /questions/what-is-the-useid-hook-in-react-and-when-should-it-be-used/en-US.mdx -->
 
@@ -398,7 +440,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-18. ### What does re-rendering mean in React?
+19. ### What does re-rendering mean in React?
 
     <!-- Update here: /questions/what-does-re-rendering-mean-in-react/en-US.mdx -->
 
@@ -414,7 +456,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-19. ### What are React Fragments used for?
+20. ### What are React Fragments used for?
 
     <!-- Update here: /questions/what-are-react-fragments-used-for/en-US.mdx -->
 
@@ -439,7 +481,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-20. ### What is `forwardRef()` in React used for?
+21. ### What is `forwardRef()` in React used for?
 
     <!-- Update here: /questions/what-is-forwardref-in-react-used-for/en-US.mdx -->
 
@@ -448,9 +490,7 @@ Curated top React.js interview questions with high quality answers for acing you
     ```jsx
     import React, { forwardRef } from 'react';
     
-    const MyComponent = forwardRef((props, ref) => (
-      <input ref={ref} {...props} />
-    ));
+    const MyComponent = forwardRef((props, ref) => <input ref={ref} {...props} />);
     ```
 
     <!-- Update here: /questions/what-is-forwardref-in-react-used-for/en-US.mdx -->
@@ -463,7 +503,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-21. ### How do you reset a component's state in React?
+22. ### How do you reset a component's state in React?
 
     <!-- Update here: /questions/how-do-you-reset-a-components-state-in-react/en-US.mdx -->
 
@@ -489,7 +529,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-22. ### Why does React recommend against mutating state?
+23. ### Why does React recommend against mutating state?
 
     <!-- Update here: /questions/why-does-react-recommend-against-mutating-state/en-US.mdx -->
 
@@ -505,7 +545,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-23. ### What are error boundaries in React for?
+24. ### What are error boundaries in React for?
 
     <!-- Update here: /questions/what-are-error-boundaries-in-react-for/en-US.mdx -->
 
@@ -521,7 +561,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-24. ### How do you test React applications?
+25. ### How do you test React applications?
 
     <!-- Update here: /questions/how-do-you-test-react-applications/en-US.mdx -->
 
@@ -537,7 +577,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-25. ### Explain what React hydration is
+26. ### Explain what React hydration is
 
     <!-- Update here: /questions/explain-what-react-hydration-is/en-US.mdx -->
 
@@ -553,7 +593,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-26. ### What are React Portals used for?
+27. ### What are React Portals used for?
 
     <!-- Update here: /questions/what-are-react-portals-used-for/en-US.mdx -->
 
@@ -569,7 +609,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-27. ### How do you debug React applications?
+28. ### How do you debug React applications?
 
     <!-- Update here: /questions/how-do-you-debug-react-applications/en-US.mdx -->
 
@@ -585,7 +625,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-28. ### What is React strict mode and what are its benefits?
+29. ### What is React strict mode and what are its benefits?
 
     <!-- Update here: /questions/what-is-react-strict-mode-and-what-are-its-benefits/en-US.mdx -->
 
@@ -601,7 +641,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-29. ### How do you localize React applications?
+30. ### How do you localize React applications?
 
     <!-- Update here: /questions/how-do-you-localize-react-applications/en-US.mdx -->
 
@@ -627,7 +667,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-30. ### What is code splitting in a React application?
+31. ### What is code splitting in a React application?
 
     <!-- Update here: /questions/what-is-code-splitting-in-a-react-application/en-US.mdx -->
 
@@ -656,7 +696,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-31. ### How would one optimize the performance of React contexts to reduce rerenders?
+32. ### How would one optimize the performance of React contexts to reduce rerenders?
 
     <!-- Update here: /questions/how-would-one-optimize-the-performance-of-react-contexts-to-reduce-rerenders/en-US.mdx -->
 
@@ -676,7 +716,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-32. ### What are higher order components in React?
+33. ### What are higher order components in React?
 
     <!-- Update here: /questions/what-are-higher-order-components-in-react/en-US.mdx -->
 
@@ -700,7 +740,40 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-33. ### Explain one-way data flow of React and its benefits
+34. ### What is the Flux pattern and what are its benefits?
+
+    <!-- Update here: /questions/what-is-the-flux-pattern-and-what-are-its-benefits/en-US.mdx -->
+
+    The Flux pattern is an architectural design used for managing state in applications, particularly in React ecosystems. It enforces a unidirectional data flow, making it easier to manage and debug application state.
+    
+    - **Core components**:
+      - **Dispatcher**: Manages actions and dispatches them to stores.
+      - **Stores**: Hold the state and logic of the application.
+      - **Actions**: Payloads of information sent from the application to the dispatcher.
+      - **View**: React components that re-render when stores update.
+    - **Benefits**:
+      - Predictable state management due to unidirectional data flow.
+      - Improved debugging and testing.
+      - Clear separation of concerns.
+    
+    Example flow:
+    
+    1. User interacts with the **View**.
+    2. **Actions** are triggered and dispatched by the **Dispatcher**.
+    3. **Stores** process the actions and update their state.
+    4. **View** re-renders based on the updated state.
+
+    <!-- Update here: /questions/what-is-the-flux-pattern-and-what-are-its-benefits/en-US.mdx -->
+
+    <br>
+
+    > Read the [detailed answer](https://greatfrontend.com/questions/quiz/what-is-the-flux-pattern-and-what-are-its-benefits) on [GreatFrontEnd](https://greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+
+    [Back to top ↑](#table-of-contents)
+    <br>
+    <br>
+
+35. ### Explain one-way data flow of React and its benefits
 
     <!-- Update here: /questions/explain-one-way-data-flow-of-react-and-its-benefits/en-US.mdx -->
 
@@ -716,7 +789,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-34. ### How do you handle asynchronous data loading in React applications?
+36. ### How do you handle asynchronous data loading in React applications?
 
     <!-- Update here: /questions/how-do-you-handle-asynchronous-data-loading-in-react-applications/en-US.mdx -->
 
@@ -758,7 +831,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-35. ### Explain server-side rendering of React applications and its benefits?
+37. ### Explain server-side rendering of React applications and its benefits?
 
     <!-- Update here: /questions/explain-server-side-rendering-of-react-applications-and-its-benefits/en-US.mdx -->
 
@@ -774,7 +847,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-36. ### Explain static generation of React applications and its benefits?
+38. ### Explain static generation of React applications and its benefits?
 
     <!-- Update here: /questions/explain-static-generation-of-react-applications-and-its-benefits/en-US.mdx -->
 
@@ -790,7 +863,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-37. ### Explain the presentational vs container component pattern in React
+39. ### Explain the presentational vs container component pattern in React
 
     <!-- Update here: /questions/explain-the-presentational-vs-container-component-pattern-in-react/en-US.mdx -->
 
@@ -806,7 +879,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-38. ### What are some common pitfalls when doing data fetching in React?
+40. ### What are some common pitfalls when doing data fetching in React?
 
     <!-- Update here: /questions/what-are-some-common-pitfalls-when-doing-data-fetching-in-react/en-US.mdx -->
 
@@ -822,7 +895,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-39. ### What are render props in React and what are they for?
+41. ### What are render props in React and what are they for?
 
     <!-- Update here: /questions/what-are-render-props-in-react-and-what-are-they-for/en-US.mdx -->
 
@@ -834,8 +907,8 @@ Curated top React.js interview questions with high quality answers for acing you
     
       componentDidMount() {
         fetch(this.props.url)
-          .then(response => response.json())
-          .then(data => this.setState({ data }));
+          .then((response) => response.json())
+          .then((data) => this.setState({ data }));
       }
     
       render() {
@@ -844,9 +917,10 @@ Curated top React.js interview questions with high quality answers for acing you
     }
     
     // Usage
-    <DataFetcher url="/api/data" render={data => (
-      <div>{data ? data.name : 'Loading...'}</div>
-    )} />
+    <DataFetcher
+      url="/api/data"
+      render={(data) => <div>{data ? data.name : 'Loading...'}</div>}
+    />;
     ```
 
     <!-- Update here: /questions/what-are-render-props-in-react-and-what-are-they-for/en-US.mdx -->
@@ -859,7 +933,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-40. ### What are some React anti-patterns?
+42. ### What are some React anti-patterns?
 
     <!-- Update here: /questions/what-are-some-react-anti-patterns/en-US.mdx -->
 
@@ -882,7 +956,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-41. ### How do you decide between using React state, context, and external state managers?
+43. ### How do you decide between using React state, context, and external state managers?
 
     <!-- Update here: /questions/how-do-you-decide-between-using-react-state-context-and-external-state-managers/en-US.mdx -->
 
@@ -898,7 +972,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-42. ### Explain the composition pattern in React
+44. ### Explain the composition pattern in React
 
     <!-- Update here: /questions/explain-the-composition-pattern-in-react/en-US.mdx -->
 
@@ -915,11 +989,7 @@ Curated top React.js interview questions with high quality answers for acing you
     }
     
     function Dialog(props) {
-      return (
-        <div className="dialog">
-          {props.children}
-        </div>
-      );
+      return <div className="dialog">{props.children}</div>;
     }
     ```
 
@@ -933,7 +1003,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-43. ### What is virtual DOM in React?
+45. ### What is virtual DOM in React?
 
     <!-- Update here: /questions/what-is-virtual-dom-in-react/en-US.mdx -->
 
@@ -949,7 +1019,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-44. ### How does virtual DOM in React work? What are its benefits and downsides?
+46. ### How does virtual DOM in React work? What are its benefits and downsides?
 
     <!-- Update here: /questions/how-does-virtual-dom-in-react-work-what-are-its-benefits-and-downsides/en-US.mdx -->
 
@@ -965,7 +1035,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-45. ### What is React Fiber and how is it an improvement over the previous approach?
+47. ### What is React Fiber and how is it an improvement over the previous approach?
 
     <!-- Update here: /questions/what-is-react-fiber-and-how-is-it-an-improvement-over-the-previous-approach/en-US.mdx -->
 
@@ -981,7 +1051,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-46. ### What is reconciliation in React?
+48. ### What is reconciliation in React?
 
     <!-- Update here: /questions/what-is-reconciliation-in-react/en-US.mdx -->
 
@@ -997,7 +1067,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-47. ### What is React Suspense and what does it enable?
+49. ### What is React Suspense and what does it enable?
 
     <!-- Update here: /questions/what-is-react-suspense-and-what-does-it-enable/en-US.mdx -->
 
@@ -1025,7 +1095,7 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-48. ### Explain what happens when `setState` is called in React
+50. ### Explain what happens when `setState` is called in React
 
     <!-- Update here: /questions/explain-what-happens-when-setstate-is-called-in-react/en-US.mdx -->
 
