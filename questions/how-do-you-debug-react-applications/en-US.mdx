@@ -40,9 +40,11 @@ Browser developer tools, such as Chrome DevTools, allow you to set breakpoints i
 3. Find the relevant file and line of code.
 4. Click on the line number to set a breakpoint.
 
-### Using error boundaries
+### Using Error Boundaries
 
-Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI. To create an error boundary, you can use the `componentDidCatch` lifecycle method or the `getDerivedStateFromError` static method:
+Error boundaries are React components that catch JavaScript errors in their child component tree. You can implement error boundaries in two ways:
+
+#### Using React's Built-in Class Component
 
 ```javascript
 class ErrorBoundary extends React.Component {
@@ -52,42 +54,86 @@ class ErrorBoundary extends React.Component {
   }
 
   static getDerivedStateFromError(error) {
+    // Update state so the next render will show the fallback UI.
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
-    console.error('Error caught by ErrorBoundary:', error, errorInfo);
+  componentDidCatch(error, info) {
+    // You can also log the error to an error reporting service
+    console.error('Error caught by error boundary:', error, info);
   }
 
   render() {
     if (this.state.hasError) {
+      // You can render any custom fallback UI
       return <h1>Something went wrong.</h1>;
     }
 
     return this.props.children;
   }
 }
+
+// Usage
+function App() {
+  return (
+    <ErrorBoundary>
+      <MyComponent />
+    </ErrorBoundary>
+  );
+}
 ```
 
-### Using React's built-in error handling
+#### Using react-error-boundary Package
 
-React provides built-in error handling mechanisms, such as the `useErrorHandler` hook in React 18. This hook allows you to handle errors in functional components:
+Alternatively, you can use the `react-error-boundary` package for a more convenient approach:
 
 ```javascript
-import { useErrorHandler } from 'react-error-boundary';
+import { ErrorBoundary } from 'react-error-boundary';
+
+function ErrorFallback({ error, resetErrorBoundary }) {
+  return (
+    <div role="alert">
+      <p>Something went wrong:</p>
+      <pre style={{ color: 'red' }}>{error.message}</pre>
+      <button onClick={resetErrorBoundary}>Try again</button>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      onReset={() => {
+        // Reset the state of your app
+      }}
+      onError={(error, info) => {
+        // Log the error to an error reporting service
+      }}
+    >
+      <MyComponent />
+    </ErrorBoundary>
+  );
+}
+```
+
+For handling errors in event handlers or async code, you can use the `useErrorBoundary` hook:
+
+```javascript
+import { useErrorBoundary } from 'react-error-boundary';
 
 function MyComponent() {
-  const handleError = useErrorHandler();
+  const { showBoundary } = useErrorBoundary();
 
-  useEffect(() => {
+  const handleAsyncError = async () => {
     try {
-      // Some code that might throw an error
+      await someAsyncOperation();
     } catch (error) {
-      handleError(error);
+      showBoundary(error);
     }
-  }, []);
+  };
 
-  return <div>My Component</div>;
+  return <button onClick={handleAsyncError}>Perform Action</button>;
 }
 ```
 
