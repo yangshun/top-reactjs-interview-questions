@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import grayMatter from 'gray-matter';
 import util from 'util';
+import url from 'node:url';
 import { QuestionFrontmatter, QuestionItem, QuestionMetadata } from './types';
 
 const README_PATH_EN = 'README.md';
@@ -59,12 +60,20 @@ async function processQuestion(
   return {
     locale,
     metadata,
-    href: `https://greatfrontend.com/questions/quiz/${metadata.slug}`,
+    href:
+      'https://www.greatfrontend.com' +
+      url.format({
+        pathname: `/questions/quiz/${metadata.slug}`,
+        query: {
+          framework: 'react',
+          tab: 'quiz',
+        },
+      }),
     title,
     titleSlug: slugger.slug(title),
     content: tlDrPart
       // Replace relative links with absolute links.
-      .replace('](/', '](https://greatfrontend.com/')
+      .replace('](/', '](https://www.greatfrontend.com/')
       .trim(),
   };
 }
@@ -116,7 +125,7 @@ ${qn.content
 
     > Read the [detailed answer](${
       qn.href
-    }) on [GreatFrontEnd](https://greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    }) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
