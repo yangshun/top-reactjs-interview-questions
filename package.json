@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "gen": "tsx scripts/gen.ts",
-    "sync": "tsx scripts/sync.ts"
+    "sync": "tsx scripts/sync.ts",
+    "translate": "langnostic translate"
   },
   "keywords": [
     "javascript",
@@ -20,7 +21,11 @@
     "github-slugger": "^2.0.0",
     "globby": "^14.0.1",
     "gray-matter": "^4.0.3",
+    "langnostic": "^0.0.5",
     "tsx": "^4.15.1"
   },
-  "packageManager": "pnpm@8.15.8"
+  "packageManager": "pnpm@8.15.8",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
 }
