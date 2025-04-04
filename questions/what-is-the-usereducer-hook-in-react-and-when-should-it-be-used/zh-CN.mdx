@@ -1,0 +1,93 @@
+---
+title: React 中的 `useReducer` Hook 是什么？应该在什么时候使用它？
+---
+
+## TL;DR
+
+React 中的 `useReducer` Hook 用于在函数组件中管理复杂的 state 逻辑。它是 `useState` 的替代方案，当 state 具有多个子值或下一个 state 依赖于前一个 state 时，它特别有用。它接受一个 reducer 函数和一个初始 state 作为参数，并返回当前 state 和一个 dispatch 函数。
+
+```javascript
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+
+当您有涉及多个子值的复杂 state 逻辑，或者下一个 state 依赖于前一个 state 时，请使用 `useReducer`。
+
+***
+
+## React 中的 `useReducer` Hook 是什么？应该在什么时候使用它？
+
+### `useReducer` 简介
+
+`useReducer` Hook 是一个 React Hook，用于在函数组件中管理 state。它是 `useState` Hook 的替代方案，特别适用于管理更复杂的 state 逻辑。`useReducer` Hook 类似于 JavaScript 数组中的 `reduce` 函数，您可以使用一个 reducer 函数来确定 state 应该如何响应操作而改变。
+
+### 语法
+
+`useReducer` Hook 接受两个参数：一个 reducer 函数和一个初始 state。它返回一个包含当前 state 和一个 dispatch 函数的数组。
+
+```javascript
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+
+### Reducer 函数
+
+reducer 函数是一个纯函数，它接受当前 state 和一个 action 作为参数，并返回新的 state。action 是一个对象，通常具有一个 `type` 属性和一个可选的 `payload`。
+
+```javascript
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      return { count: state.count + 1 };
+    case 'decrement':
+      return { count: state.count - 1 };
+    default:
+      throw new Error();
+  }
+}
+```
+
+### 使用示例
+
+这是一个使用 `useReducer` 管理计数器 state 的简单示例：
+
+```javascript
+import React, { useReducer } from 'react';
+
+const initialState = { count: 0 };
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      return { count: state.count + 1 };
+    case 'decrement':
+      return { count: state.count - 1 };
+    default:
+      throw new Error();
+  }
+}
+
+function Counter() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  return (
+    <div>
+      <p>Count: {state.count}</p>
+      <button onClick={() => dispatch({ type: 'increment' })}>Increment</button>
+      <button onClick={() => dispatch({ type: 'decrement' })}>Decrement</button>
+    </div>
+  );
+}
+
+export default Counter;
+```
+
+### 什么时候使用 `useReducer`
+
+* **复杂的 state 逻辑**：当您有涉及多个子值的复杂 state 逻辑，或者下一个 state 依赖于前一个 state 时，请使用 `useReducer`。
+* **状态管理**：当您需要更可预测的状态管理模式（类似于 Redux）时，它很有用。
+* **性能优化**：`useReducer` 可以通过避免不必要的重新渲染来帮助优化某些情况下的性能。
+
+## 延伸阅读
+
+* [React 关于 `useReducer` 的文档](https://reactjs.org/docs/hooks-reference.html#usereducer)
+* [使用 `useReducer` hook](https://reactjs.org/docs/hooks-faq.html#how-to-avoid-passing-callbacks-down)
+* [`useReducer` 完整指南](https://www.smashingmagazine.com/2020/06/redux-patterns-use-reducer-react/)

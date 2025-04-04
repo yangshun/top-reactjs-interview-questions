@@ -1,0 +1,80 @@
+---
+title: React Fragments 有什么用？
+---
+
+## TL;DR
+
+React Fragments 用于对多个元素进行分组，而无需向 DOM 添加额外的节点。当您希望从组件的 render 方法返回多个元素，而无需将它们包裹在额外的 HTML 元素中时，这非常有用。您可以使用简写语法 `<>...</>` 或 `React.Fragment` 语法。
+
+```jsx
+return (
+  <>
+    <ChildComponent1 />
+    <ChildComponent2 />
+  </>
+);
+```
+
+***
+
+## React Fragments 有什么用？
+
+### 对多个元素进行分组
+
+React Fragments 允许您对多个元素进行分组，而无需向 DOM 添加额外的节点。当您希望从组件的 render 方法返回多个元素，但又不想引入不必要的包装元素时，这特别有用。
+
+### 避免不必要的 DOM 节点
+
+使用 React Fragments 有助于避免不必要的 DOM 节点，这对于性能和维护更清晰的 DOM 结构是有益的。这在复杂应用程序中尤为重要，因为额外的节点可能导致内存使用增加和渲染时间变慢。
+
+### 语法
+
+使用 React Fragments 有两种方法：
+
+1. **简写语法**：这是使用 fragments 最简洁的方式。它使用空标签 `<>...</>`。
+
+   ```jsx
+   return (
+     <>
+       <ChildComponent1 />
+       <ChildComponent2 />
+     </>
+   );
+   ```
+
+2. **完整语法**：这使用 `React.Fragment`，如果您需要向 fragment 添加键，这可能很有用。
+
+   ```jsx
+   return (
+     <React.Fragment>
+       <ChildComponent1 />
+       <ChildComponent2 />
+     </React.Fragment>
+   );
+   ```
+
+### 向 fragments 添加键
+
+如果您需要向 fragment 中的元素添加键，则必须使用完整的 `React.Fragment` 语法。这在渲染元素列表时很有用。
+
+```jsx
+return (
+  <React.Fragment>
+    {items.map((item) => (
+      <ChildComponent key={item.id} />
+    ))}
+  </React.Fragment>
+);
+```
+
+### 用例
+
+* **从组件返回多个元素**：当组件需要返回多个兄弟元素时，使用 fragment 可以帮助避免不必要的包装元素。
+* **渲染列表**：渲染元素列表时，可以使用 fragments 对列表项进行分组，而无需向 DOM 添加额外的节点。
+* **条件渲染**：当有条件地渲染多个元素时，fragments 可以帮助保持 DOM 结构的整洁。
+
+## 延伸阅读
+
+* [React Fragments - 官方文档](https://reactjs.org/docs/fragments.html)
+* [React Fragments - 完整指南](https://www.freecodecamp.org/news/react-fragments-complete-guide/)
+* [何时使用 React Fragments](https://blog.logrocket.com/when-to-use-react-fragments/)

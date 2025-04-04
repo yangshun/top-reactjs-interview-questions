@@ -1,0 +1,67 @@
+---
+title: 什么是 React Fiber？与之前的方案相比，它有哪些改进？
+---
+
+## TL;DR
+
+React Fiber 是对 React 渲染算法的完全重写，在 React 16 中引入。它通过将渲染工作分解成更小的单元来改进渲染过程，允许 React 暂停和恢复工作，从而使 UI 具有更高的响应速度。这种方法支持时间切片和 Suspense 等功能，而这些功能在之前的基于堆栈的算法中是不可能实现的。
+
+***
+
+## 什么是 React Fiber？与之前的方案相比，它有哪些改进？
+
+### React Fiber 简介
+
+React Fiber 是对 React 渲染和协调的核心算法的重新实现。它在 React 16 中引入，用于解决之前基于堆栈的算法的局限性。Fiber 的主要目标是实现虚拟 DOM 的增量渲染，这使得 React 可以将渲染工作分成块并在多个帧中展开。
+
+### 与之前的方案相比的主要改进
+
+#### 增量渲染
+
+之前的基于堆栈的算法在一个同步过程中处理更新，这可能导致性能问题，尤其是在复杂的 UI 中。React Fiber 将渲染工作分解成更小的单元，称为“fiber”，允许 React 暂停和恢复工作。这使得 UI 具有更高的响应速度，并防止长时间阻塞主线程。
+
+#### 时间切片
+
+React Fiber 引入了时间切片的概念，它允许 React 根据更新的紧急程度对其进行优先级排序。例如，用户交互（如点击和按键）可以优先于不太关键的更新。这确保了即使在繁重的渲染任务期间，UI 也能保持响应。
+
+#### 并发
+
+使用 Fiber，React 可以同时处理多个任务。这意味着 React 可以在处理其他任务的同时开始渲染更新，从而带来更流畅、更具响应性的用户体验。
+
+#### 错误边界
+
+React Fiber 引入了错误边界，允许开发人员优雅地捕获和处理组件树中的错误。这在之前的基于堆栈的算法中是不可能的，在之前的算法中，错误可能导致整个应用程序崩溃。
+
+#### 改进的动画支持
+
+Fiber 的增量渲染和时间切片功能使得实现流畅的动画和过渡变得更容易。React 现在可以优先考虑动画帧并确保及时渲染它们，从而带来更好的用户体验。
+
+### 代码示例
+
+这里有一个简单的例子来说明 React Fiber 如何提高渲染性能：
+
+```jsx
+class MyComponent extends React.Component {
+  state = {
+    items: Array.from({ length: 10000 }, (_, i) => i),
+  };
+
+  render() {
+    return (
+      <div>
+        {this.state.items.map((item) => (
+          <div key={item}>{item}</div>
+        ))}
+      </div>
+    );
+  }
+}
+```
+
+使用之前的基于堆栈的算法，渲染此组件可能会导致 UI 冻结。使用 React Fiber，渲染工作被分解成更小的单元，允许 React 暂停和恢复工作，保持 UI 的响应性。
+
+## 延伸阅读
+
+* [React Fiber 架构](https://github.com/acdlite/react-fiber-architecture)
+* [React Fiber 简介](https://reactjs.org/blog/2017/09/26/react-v16.0.html)
+* [React 文档：并发模式](https://reactjs.org/docs/concurrent-mode-intro.html)

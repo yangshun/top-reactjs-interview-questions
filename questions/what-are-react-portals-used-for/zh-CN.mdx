@@ -1,0 +1,97 @@
+---
+title: React Portals 有什么用？
+---
+
+## TL;DR
+
+React Portals 用于将子项渲染到存在于父组件层级结构之外的 DOM 节点中。这对于模态框、工具提示和下拉菜单等需要突破父组件的 overflow 或 z-index 限制的场景非常有用。您可以使用 `ReactDOM.createPortal(child, container)` 创建一个 portal。
+
+***
+
+## React Portals 有什么用？
+
+### 简介
+
+React Portals 提供了一种将子项渲染到存在于父组件 DOM 结构之外的 DOM 节点中的方法。这对于某些需要突破正常父子 DOM 结构的 UI 模式特别有用。
+
+### 用例
+
+#### 模态框
+
+模态框通常需要在父组件之外渲染，以避免 z-index 和 overflow 问题。通过使用 portal，您可以确保模态框在 DOM 的顶层渲染，从而更容易管理其可见性和定位。
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const Modal = ({ isOpen, children }) => {
+  if (!isOpen) return null;
+
+  return ReactDOM.createPortal(
+    <div className="modal">{children}</div>,
+    document.getElementById('modal-root'),
+  );
+};
+```
+
+#### 工具提示
+
+工具提示需要在父组件之外渲染，以避免被 overflow 设置剪切。使用 portal 允许工具提示正确地定位，而不会受到父组件样式的约束。
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const Tooltip = ({ text, targetRef }) => {
+  const tooltipStyle = {
+    position: 'absolute',
+    top: targetRef.current.offsetTop,
+    left: targetRef.current.offsetLeft,
+  };
+
+  return ReactDOM.createPortal(
+    <div className="tooltip" style={tooltipStyle}>
+      {text}
+    </div>,
+    document.body,
+  );
+};
+```
+
+#### 下拉菜单
+
+下拉菜单通常需要在父组件之外渲染，以避免被 overflow 设置剪切。使用 portal 允许下拉菜单正确地定位，而不会受到父组件样式的约束。
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const Dropdown = ({ isOpen, children }) => {
+  if (!isOpen) return null;
+
+  return ReactDOM.createPortal(
+    <div className="dropdown">{children}</div>,
+    document.body,
+  );
+};
+```
+
+### 如何创建 portal
+
+要创建一个 portal，您可以使用 `ReactDOM.createPortal` 方法。此方法接受两个参数：要渲染的子元素和要将其渲染到的 DOM 节点。
+
+```jsx
+ReactDOM.createPortal(child, container);
+```
+
+### 优点
+
+* **突破父级约束**：Portals 允许您在父组件的 DOM 层次结构之外渲染组件，这对于避免 z-index 和 overflow 问题很有用。
+* **改进的可访问性**：通过在 DOM 的顶层渲染模态框和工具提示等组件，您可以确保它们更容易被屏幕阅读器和其他辅助技术访问。
+* **简化样式**：通过在父组件之外渲染组件，您可以避免复杂的 CSS 规则，并确保组件的样式正确。
+
+## 延伸阅读
+
+* [React Portals 文档](https://reactjs.org/docs/portals.html)
+* [使用 React Portals 构建模态框](https://blog.logrocket.com/building-a-modal-with-react-portals/)
+* [使用 React Portals 提高可访问性](https://www.smashingmagazine.com/2020/03/react-portals-accessibility/)

@@ -1,0 +1,111 @@
+---
+title: React 中的 `useRef` 钩子是什么？应该在什么时候使用它？
+---
+
+## TL;DR
+
+React 中的 `useRef` 钩子用于创建一个在渲染之间保持不变的可变对象。它可用于直接访问和操作 DOM 元素，存储在更新时不导致重新渲染的可变值，以及保留对值的引用而不触发重新渲染。例如，您可以使用 `useRef` 来聚焦输入元素：
+
+```javascript
+import React, { useRef, useEffect } from 'react';
+
+function TextInputWithFocusButton() {
+  const inputEl = useRef(null);
+
+  useEffect(() => {
+    inputEl.current.focus();
+  }, []);
+
+  return <input ref={inputEl} type="text" />;
+}
+```
+
+***
+
+## React 中的 `useRef` 钩子是什么？应该在什么时候使用它？
+
+### `useRef` 简介
+
+React 中的 `useRef` 钩子是一个函数，它返回一个可变的 `ref` 对象，其 `.current` 属性被初始化为传递的参数 (`initialValue`)。返回的对象将在组件的整个生命周期内保持不变。
+
+### `useRef` 的关键用例
+
+#### 访问和操作 DOM 元素
+
+`useRef` 的主要用例之一是直接访问和操作 DOM 元素。当您需要以 React 的声明式方法无法轻松实现的方式与 DOM 交互时，这特别有用。
+
+例子：
+
+```javascript
+import React, { useRef, useEffect } from 'react';
+
+function TextInputWithFocusButton() {
+  const inputEl = useRef(null);
+
+  useEffect(() => {
+    inputEl.current.focus();
+  }, []);
+
+  return <input ref={inputEl} type="text" />;
+}
+```
+
+在此示例中，`useRef` 钩子用于创建对输入元素的引用，而 `useEffect` 钩子用于在组件挂载时聚焦输入元素。
+
+#### 存储可变值
+
+`useRef` 也可以用于存储在更新时不会导致重新渲染的可变值。这对于跟踪随时间变化但不需要触发重新渲染的值很有用。
+
+例子：
+
+```javascript
+import React, { useRef } from 'react';
+
+function Timer() {
+  const count = useRef(0);
+
+  const increment = () => {
+    count.current += 1;
+    console.log(count.current);
+  };
+
+  return <button onClick={increment}>Increment</button>;
+}
+```
+
+在此示例中，`count` 变量存储在 `useRef` 对象中，并且它的值递增，而不会导致组件重新渲染。
+
+#### 保留对值的引用
+
+`useRef` 可用于保留对值的引用，而不会触发重新渲染。这对于存储需要在渲染之间保持不变但不需要在更改时导致重新渲染的值很有用。
+
+例子：
+
+```javascript
+import React, { useRef, useState, useEffect } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+  const prevCountRef = useRef();
+
+  useEffect(() => {
+    prevCountRef.current = count;
+  }, [count]);
+
+  return (
+    <div>
+      <h1>Now: {count}</h1>
+      <h2>Before: {prevCountRef.current}</h2>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+```
+
+在这个例子中，`prevCountRef` 用于保持对 `count` 前一个值的引用，而不会导致重新渲染。
+
+## 延伸阅读
+
+* [`useRef` 的 React 文档](https://reactjs.org/docs/hooks-reference.html#useref)
+* [使用 `useRef` hook](https://reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables)
+* [`useRef` 的常见用例](https://blog.logrocket.com/how-to-use-react-useref-hook/)

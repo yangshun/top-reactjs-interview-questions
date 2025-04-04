@@ -1,0 +1,87 @@
+---
+title: React 中什么是高阶组件？
+---
+
+## TL;DR
+
+React 中的高阶组件 (HOC) 是接受一个组件并返回一个新组件的函数，该新组件具有额外的 props 或行为。它们用于重用组件逻辑。例如，如果您有一个组件 `MyComponent`，您可以像这样创建一个 HOC：
+
+```javascript
+const withExtraProps = (WrappedComponent) => {
+  return (props) => <WrappedComponent {...props} extraProp="value" />;
+};
+
+const EnhancedComponent = withExtraProps(MyComponent);
+```
+
+***
+
+## React 中什么是高阶组件？
+
+### 定义
+
+高阶组件 (HOC) 是 React 中接受一个组件作为参数并返回一个新组件的函数。新组件通常会包装原始组件并添加额外的 props、state 或行为。HOC 是一种重用组件逻辑的模式。
+
+### 目的
+
+HOC 用于：
+
+* 在组件之间共享通用功能
+* 抽象和重用组件逻辑
+* 使用额外的 props 或 state 增强组件
+
+### 示例
+
+这是一个简单的 HOC 示例，它向包装的组件添加一个 `extraProp`：
+
+```javascript
+import React from 'react';
+
+// 定义 HOC
+const withExtraProps = (WrappedComponent) => {
+  return (props) => {
+    return <WrappedComponent {...props} extraProp="value" />;
+  };
+};
+
+// 定义要包装的组件
+const MyComponent = (props) => {
+  return <div>{props.extraProp}</div>;
+};
+
+// 使用 HOC 包装组件
+const EnhancedComponent = withExtraProps(MyComponent);
+
+// 使用增强组件
+const App = () => {
+  return <EnhancedComponent />;
+};
+
+export default App;
+```
+
+在此示例中，`withExtraProps` 是一个 HOC，它向 `MyComponent` 添加一个 `extraProp`。`EnhancedComponent` 现在可以访问 `extraProp`。
+
+### 常见用例
+
+* **身份验证**：在渲染之前包装组件以检查用户是否已通过身份验证。
+* **日志记录**：向组件添加日志记录功能。
+* **主题**：将与主题相关的 props 注入到组件中。
+* **数据获取**：获取数据并将其作为 props 传递给组件。
+
+### 最佳实践
+
+* **不要改变原始组件**：始终返回一个新组件。
+* **谨慎使用 HOC**：过度使用 HOC 会使代码更难理解。
+* **正确命名 HOC**：使用一个描述性名称来指示 HOC 的作用。
+
+### 替代方案
+
+* **Render props**: 一种模式，组件使用函数作为 prop 来确定要渲染的内容。
+* **Hooks**: 自定义 hooks 可用于在函数组件之间共享逻辑。
+
+## 延伸阅读
+
+* [React 关于高阶组件的文档](https://reactjs.org/docs/higher-order-components.html)
+* [理解 React 中的高阶组件](https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e)
+* [HOCs vs Render Props vs Hooks](https://blog.logrocket.com/hooks-vs-render-props-vs-hocs/)

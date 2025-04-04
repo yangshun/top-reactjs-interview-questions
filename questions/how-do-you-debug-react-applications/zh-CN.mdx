@@ -1,0 +1,145 @@
+---
+title: 如何调试 React 应用程序？
+---
+
+## TL;DR
+
+要调试 React 应用程序，您可以使用 React Developer Tools 浏览器扩展程序来检查组件层次结构和状态。此外，您可以使用 `console.log` 语句来记录数据和错误，并利用浏览器开发者工具在代码中设置断点。对于更高级的调试，您可以使用错误边界来捕获和处理组件中的错误。
+
+***
+
+## 如何调试 React 应用程序？
+
+### 使用 React Developer Tools
+
+React Developer Tools 浏览器扩展程序是一个用于检查和调试 React 应用程序的强大工具。它允许您：
+
+* 检查组件层次结构
+* 查看和编辑组件状态和属性
+* 跟踪组件重新渲染
+
+您可以从 [Chrome Web Store](https://chrome.google.com/webstore/detail/react-developer-tools) 或 [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/) 安装该扩展程序。
+
+### 使用 `console.log` 语句
+
+在代码中添加 `console.log` 语句可以帮助您了解应用程序的流程并识别问题。例如：
+
+```javascript
+function MyComponent(props) {
+  console.log('Rendering MyComponent with props:', props);
+  return <div>{props.message}</div>;
+}
+```
+
+### 使用断点
+
+浏览器开发者工具（例如 Chrome DevTools）允许您在代码中设置断点。这可以帮助您暂停执行并检查应用程序的当前状态。要设置断点：
+
+1. 打开浏览器的开发者工具（通常按 `F12` 或 `Ctrl+Shift+I`）。
+2. 导航到“Sources”选项卡。
+3. 找到相关文件和代码行。
+4. 单击行号以设置断点。
+
+### 使用错误边界
+
+错误边界是 React 组件，用于捕获其子组件树中的 JavaScript 错误。您可以通过两种方式实现错误边界：
+
+#### 使用 React 的内置类组件
+
+```javascript
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    // Update state so the next render will show the fallback UI.
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, info) {
+    // You can also log the error to an error reporting service
+    console.error('Error caught by error boundary:', error, info);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      // You can render any custom fallback UI
+      return <h1>Something went wrong.</h1>;
+    }
+
+    return this.props.children;
+  }
+}
+
+// Usage
+function App() {
+  return (
+    <ErrorBoundary>
+      <MyComponent />
+    </ErrorBoundary>
+  );
+}
+```
+
+#### 使用 react-error-boundary 包
+
+或者，您可以使用 `react-error-boundary` 包来获得更方便的方法：
+
+```javascript
+import { ErrorBoundary } from 'react-error-boundary';
+
+function ErrorFallback({ error, resetErrorBoundary }) {
+  return (
+    <div role="alert">
+      <p>出错了：</p>
+      <pre style={{ color: 'red' }}>{error.message}</pre>
+      <button onClick={resetErrorBoundary}>重试</button>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      onReset={() => {
+        // 重置您的应用程序的状态
+      }}
+      onError={(error, info) => {
+        // 将错误记录到错误报告服务
+      }}
+    >
+      <MyComponent />
+    </ErrorBoundary>
+  );
+}
+```
+
+对于处理事件处理程序或异步代码中的错误，您可以使用 `useErrorBoundary` 钩子：
+
+```javascript
+import { useErrorBoundary } from 'react-error-boundary';
+
+function MyComponent() {
+  const { showBoundary } = useErrorBoundary();
+
+  const handleAsyncError = async () => {
+    try {
+      await someAsyncOperation();
+    } catch (error) {
+      showBoundary(error);
+    }
+  };
+
+  return <button onClick={handleAsyncError}>执行操作</button>;
+}
+```
+
+## 延伸阅读
+
+* [React 开发者工具](https://reactjs.org/blog/2015/09/02/new-react-developer-tools.html)
+* [React 中的错误边界](https://reactjs.org/docs/error-boundaries.html)
+* [使用 Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+* [调试 JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Debugging)

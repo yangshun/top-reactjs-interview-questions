@@ -1,0 +1,90 @@
+---
+title: 什么是 React Suspense 以及它能做什么？
+---
+
+## TL;DR
+
+React Suspense 是一项功能，允许您更优雅地处理 React 组件中的异步操作。它使您能够在等待加载某些内容（例如数据获取或代码拆分）时显示回退内容。您可以将其与 `React.lazy` 一起用于代码拆分，并与 `react-query` 等库一起用于数据获取。
+
+```jsx
+const LazyComponent = React.lazy(() => import('./LazyComponent'));
+
+function MyComponent() {
+  return (
+    <React.Suspense fallback={<div>Loading...</div>}>
+      <LazyComponent />
+    </React.Suspense>
+  );
+}
+```
+
+***
+
+## 什么是 React Suspense 以及它能做什么？
+
+### React Suspense 简介
+
+React Suspense 是 React 团队引入的一项功能，旨在帮助以更具声明性的方式管理异步操作。它允许您在等待某些异步操作完成（例如数据获取或代码拆分）时指定加载状态（回退）。
+
+### 使用 React.lazy 进行代码拆分
+
+React Suspense 的主要用例之一是代码拆分。代码拆分允许您按需加载应用程序的各个部分，这可以显着提高应用程序的初始加载时间。
+
+```jsx
+import React, { Suspense } from 'react';
+
+const LazyComponent = React.lazy(() => import('./LazyComponent'));
+
+function MyComponent() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LazyComponent />
+    </Suspense>
+  );
+}
+```
+
+在此示例中，`React.lazy` 用于动态导入 `LazyComponent`。`Suspense` 组件包装了延迟加载的组件，并提供了一个回退 UI (`<div>Loading...</div>`)，用于在加载组件时显示。
+
+### 使用 Suspense 获取数据
+
+React Suspense 也可以用于数据获取，尽管此功能仍处于实验阶段，需要额外的库，如 `react-query` 或 `Relay`。
+
+```jsx
+import React, { Suspense } from 'react';
+import { useQuery } from 'react-query';
+
+function fetchData() {
+  return fetch('https://api.example.com/data').then((response) =>
+    response.json(),
+  );
+}
+
+function DataComponent() {
+  const { data } = useQuery('data', fetchData);
+  return <div>{data}</div>;
+}
+
+function MyComponent() {
+  return (
+    <Suspense fallback={<div>Loading data...</div>}>
+      <DataComponent />
+    </Suspense>
+  );
+}
+```
+
+在此示例中，`react-query` 用于获取数据，而 `Suspense` 在加载数据时提供回退 UI。
+
+### React Suspense 的好处
+
+* **改善用户体验**：通过显示回退内容，您可以在等待异步操作完成时让用户保持参与。
+* **简化代码**：Suspense 允许您以声明方式处理加载状态，从而减少了对复杂状态管理的需求。
+* **更好的性能**：使用 `React.lazy` 进行代码拆分可以显着减少应用程序的初始加载时间。
+
+## 延伸阅读
+
+* [React Suspense 文档](https://reactjs.org/docs/concurrent-mode-suspense.html)
+* [React.lazy 文档](https://reactjs.org/docs/code-splitting.html#reactlazy)
+* [React Query 文档](https://react-query.tanstack.com/)
+* [Relay 文档](https://relay.dev/docs/en/experimental/api-reference#suspense)

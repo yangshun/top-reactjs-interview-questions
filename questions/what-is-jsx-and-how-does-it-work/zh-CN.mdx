@@ -1,0 +1,72 @@
+---
+title: 什么是JSX以及它如何工作？
+---
+
+## TL;DR
+
+JSX 代表 JavaScript XML。它是 JavaScript 的语法扩展，允许您在 JavaScript 中编写类似 HTML 的代码。JSX 通过允许您直接在 JavaScript 代码中编写类似 HTML 的内容，从而更容易创建 React 组件。在底层，JSX 被转换为 JavaScript 函数调用，通常使用 Babel 等工具。例如，JSX 中的 `<div>Hello, world!</div>` 被转换为 `React.createElement('div', null, 'Hello, world!')`。
+
+***
+
+## 什么是JSX以及它如何工作？
+
+### 什么是JSX？
+
+JSX 代表 JavaScript XML。它是 JavaScript 的语法扩展，允许您在 JavaScript 中编写类似 HTML 的代码。JSX 主要与 React 一起使用，用于描述 UI 应该是什么样子。
+
+### JSX 如何工作？
+
+JSX 本身不是有效的 JavaScript。它需要先转换为常规 JavaScript，然后才能由浏览器执行。这种转换通常由 Babel 等工具完成。
+
+### JSX 语法
+
+JSX 允许您直接在 JavaScript 代码中编写类似 HTML 的标签。例如：
+
+```jsx
+const element = <h1>Hello, world!</h1>;
+```
+
+### 转换过程
+
+当您编写 JSX 时，它会被转换为 JavaScript 函数调用。例如，JSX 代码：
+
+```jsx
+const element = <h1>Hello, world!</h1>;
+```
+
+被转换为：
+
+```javascript
+const element = React.createElement('h1', null, 'Hello, world!');
+```
+
+### 嵌入表达式
+
+您可以使用大括号 `{}` 将 JavaScript 表达式嵌入到 JSX 中。例如：
+
+```jsx
+const name = 'John';
+const element = <h1>Hello, {name}!</h1>;
+```
+
+### JSX 中的属性
+
+您可以使用引号指定字符串字面量作为属性，并使用大括号嵌入 JavaScript 表达式。例如：
+
+```jsx
+const element = <img src={user.avatarUrl} alt="User Avatar" />;
+```
+
+### JSX 是一个表达式
+
+编译后，JSX 表达式会变成常规的 JavaScript 函数调用，并计算为 JavaScript 对象。这意味着您可以在 if 语句、for 循环中使用 JSX，并将其分配给变量。
+
+### JSX 阻止注入攻击
+
+默认情况下，React DOM 会在渲染之前转义 JSX 中嵌入的任何值。这确保了您永远无法注入未在应用程序中明确编写的任何内容。
+
+## 延伸阅读
+
+* [React JSX 文档](https://reactjs.org/docs/introducing-jsx.html)
+* [Babel](https://babeljs.io/)
+* [MDN Web Docs 关于 JSX](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JSX)

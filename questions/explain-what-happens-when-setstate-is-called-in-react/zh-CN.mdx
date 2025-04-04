@@ -1,0 +1,58 @@
+---
+title: 解释在 React 中调用 `setState` 时会发生什么
+---
+
+## 总结
+
+在 React 中调用 `setState` 时，它会安排对组件状态对象的更新。然后，React 将新状态与当前状态合并，并触发组件的重新渲染。此过程是异步的，这意味着状态更改可能不会立即发生。React 会批量处理多个 `setState` 调用以进行性能优化。
+
+***
+
+## 在 React 中调用 `setState` 时会发生什么
+
+### 状态更新调度
+
+当调用 `setState` 时，React 会安排对组件状态的更新。这意味着状态更改不会立即发生。相反，React 会将组件标记为需要更新，稍后将处理状态更改。
+
+```javascript
+this.setState({ count: this.state.count + 1 });
+```
+
+### 合并状态
+
+React 将新状态与当前状态合并。`setState` 方法执行浅合并，这意味着它仅更新新状态对象中指定的属性，而保留其余属性不变。
+
+```javascript
+this.setState({ name: 'John' });
+// 仅更新 'name' 属性，其他状态属性保持不变
+```
+
+### 重新渲染
+
+合并状态后，React 会触发组件的重新渲染。将调用组件的 `render` 方法，并更新虚拟 DOM。然后，React 将虚拟 DOM 与实际 DOM 进行比较，并对实际 DOM 进行必要的更新。
+
+### 异步性质
+
+`setState` 方法是异步的。React 会批量处理多个 `setState` 调用以进行性能优化。这意味着，如果您连续多次调用 `setState`，React 可能会将它们合并为单个更新。
+
+```javascript
+this.setState({ count: this.state.count + 1 });
+this.setState({ count: this.state.count + 1 });
+// React 可能会将这些更新批处理为单个更新
+```
+
+### 回调函数
+
+您可以将回调函数作为第二个参数传递给 `setState`。此函数将在状态更新且组件重新渲染后被调用。
+
+```javascript
+this.setState({ count: this.state.count + 1 }, () => {
+  console.log('状态已更新，组件已重新渲染');
+});
+```
+
+## 延伸阅读
+
+* [React setState 文档](https://reactjs.org/docs/react-component.html#setstate)
+* [理解 React 中的 setState](https://medium.com/@baphemot/understanding-react-setstate-a4640451865b)
+* [React 的 setState 解释](https://daveceddia.com/where-fetch-data-componentwillmount-vs-componentdidmount/)
