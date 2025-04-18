@@ -59,11 +59,13 @@ If you need to add keys to the elements within a fragment, you must use the full
 
 ```jsx
 return (
-  <React.Fragment>
+  <>
     {items.map((item) => (
-      <ChildComponent key={item.id} />
+      <React.Fragment key={item.id}>
+        <ChildComponent />
+      </React.Fragment>
     ))}
-  </React.Fragment>
+  </>
 );
 ```
 
