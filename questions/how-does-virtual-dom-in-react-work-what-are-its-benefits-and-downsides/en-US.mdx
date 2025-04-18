@@ -24,24 +24,19 @@ The virtual DOM is a concept where a virtual representation of the UI is kept in
 ### Code example
 
 ```jsx
-class MyComponent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { count: 0 };
-  }
+import { useState } from 'react';
 
-  increment = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
+function MyComponent() {
+  const [count, setCount] = useState(0);
 
-  render() {
-    return (
-      <div>
-        <p>{this.state.count}</p>
-        <button onClick={this.increment}>Increment</button>
-      </div>
-    );
-  }
+  const increment = () => setCount(count + 1);
+
+  return (
+    <div>
+      <p>{count}</p>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
 }
 ```
 
@@ -75,6 +70,5 @@ In this example, when the button is clicked, the state changes, triggering a new
 
 ## Further reading
 
-- [React documentation on reconciliation](https://reactjs.org/docs/reconciliation.html)
-- [Understanding the virtual DOM](https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060)
-- [React performance optimization](https://reactjs.org/docs/optimizing-performance.html)
+- [React Docs on Reconciliation](https://react.dev/learn/render-and-commit)
+- [What is the Virtual DOM in React?](https://www.freecodecamp.org/news/what-is-the-virtual-dom-in-react/)
