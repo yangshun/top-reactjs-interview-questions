@@ -1,58 +1,58 @@
 ---
-title: Explain what happens when `setState` is called in React
+title: Explain what happens when the `useState` setter function is called in React
 ---
 
 ## TL;DR
 
-When `setState` is called in React, it schedules an update to the component's state object. React then merges the new state with the current state and triggers a re-render of the component. This process is asynchronous, meaning the state change might not happen immediately. React batches multiple `setState` calls for performance optimization.
+When the setter function returned by the `useState` hook is called in React, it schedules an update to the component's state value. React then queues a re-render of the component with the new state. This process is typically asynchronous, and React batches multiple state updates together for performance.
 
 ---
 
-## What happens when `setState` is called in React
+## What happens when the `useState` setter is called
 
 ### State update scheduling
 
-When `setState` is called, React schedules an update to the component's state. This means that the state change does not happen immediately. Instead, React marks the component as needing an update and will process the state change later.
+When you call the setter function provided by `useState` (e.g., `setCount`), React schedules an update for that specific state variable. This doesn't happen instantly; React marks the component as needing to re-render with the updated state value.
 
 ```javascript
-this.setState({ count: this.state.count + 1 });
+const [count, setCount] = useState(0);
+// ...
+setCount(count + 1); // Schedules an update to set 'count' to 1
 ```
 
-### Merging state
+### State replacement
 
-React merges the new state with the current state. The `setState` method performs a shallow merge, meaning it only updates the properties specified in the new state object and leaves the rest unchanged.
+The `useState` setter function **replaces** the old state value entirely with the new value you provide. If your state is an object and you only want to update one property, you need to manually spread the old state and override the specific property.
 
 ```javascript
-this.setState({ name: 'John' });
-// Only the 'name' property is updated, other state properties remain the same
+const [user, setUser] = useState({ name: 'Anon', age: 99 });
+
+// To update only name, you must spread the old state:
+setUser((prevState) => ({ ...prevState, name: 'John' }));
+// If you just did setUser({ name: 'John' }), the 'age' property would be lost.
 ```
 
 ### Re-rendering
 
-After merging the state, React triggers a re-render of the component. The component's `render` method is called, and the virtual DOM is updated. React then compares the virtual DOM with the actual DOM and makes the necessary updates to the actual DOM.
+After scheduling the state update(s), React will eventually trigger a re-render of the component. The functional component body is executed again with the new state value(s). React updates its virtual DOM, compares it with the previous version, and efficiently updates the actual DOM only where necessary.
 
-### Asynchronous nature
+### Asynchronous nature and Batching
 
-The `setState` method is asynchronous. React batches multiple `setState` calls for performance optimization. This means that if you call `setState` multiple times in a row, React may combine them into a single update.
-
-```javascript
-this.setState({ count: this.state.count + 1 });
-this.setState({ count: this.state.count + 1 });
-// React may batch these updates into a single update
-```
-
-### Callback function
-
-You can pass a callback function as the second argument to `setState`. This function will be called after the state has been updated and the component has re-rendered.
+State updates triggered by `useState` setters are typically asynchronous and batched. If you call multiple state setters in the same event handler or effect, React will often batch these updates together into a single re-render pass for better performance. Because of this, you shouldn't rely on the state variable having its new value immediately after calling the setter. If the new state depends on the previous state, use the functional update form.
 
 ```javascript
-this.setState({ count: this.state.count + 1 }, () => {
-  console.log('State updated and component re-rendered');
-});
+// Assume count is 0
+setCount(count + 1); // Queues update to 1
+setCount(count + 1); // Still sees count as 0, queues update to 1 again!
+// Result might be 1, not 2
+
+// Correct way using functional update:
+setCount((prevCount) => prevCount + 1); // Queues update based on previous state
+setCount((prevCount) => prevCount + 1); // Queues another update based on the result of the first
+// Result will be 2
 ```
 
 ## Further reading
 
-- [React documentation on setState](https://react.dev/reference/react/useState#setstate)
-- [Understanding setState in React](https://medium.com/@baphemot/understanding-react-setstate-a4640451865b)
-- [React's setState explained](https://daveceddia.com/where-fetch-data-componentwillmount-vs-componentdidmount/)
+- [React Docs: Using the State Hook (`useState`)](https://react.dev/reference/react/useState)
+- [React Docs: Queueing multiple state updates](https://react.dev/reference/react/useState#updating-state-based-on-the-previous-state)
