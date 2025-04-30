@@ -57,7 +57,7 @@ Curated top React.js interview questions with high quality answers for acing you
 | 47 | [What is React Fiber and how is it an improvement over the previous approach?](#what-is-react-fiber-and-how-is-it-an-improvement-over-the-previous-approach) |
 | 48 | [What is reconciliation in React?](#what-is-reconciliation-in-react) |
 | 49 | [What is React Suspense and what does it enable?](#what-is-react-suspense-and-what-does-it-enable) |
-| 50 | [Explain what happens when `setState` is called in React](#explain-what-happens-when-setstate-is-called-in-react) |
+| 50 | [Explain what happens when the `useState` setter function is called in React](#explain-what-happens-when-the-usestate-setter-function-is-called-in-react) |
 
 <!-- TABLE_OF_CONTENTS:END -->
 
@@ -1095,11 +1095,11 @@ Curated top React.js interview questions with high quality answers for acing you
     <br>
     <br>
 
-50. ### Explain what happens when `setState` is called in React
+50. ### Explain what happens when the `useState` setter function is called in React
 
     <!-- Update here: /questions/explain-what-happens-when-setstate-is-called-in-react/en-US.mdx -->
 
-    When `setState` is called in React, it schedules an update to the component's state object. React then merges the new state with the current state and triggers a re-render of the component. This process is asynchronous, meaning the state change might not happen immediately. React batches multiple `setState` calls for performance optimization.
+    When the setter function returned by the `useState` hook is called in React, it schedules an update to the component's state value. React then queues a re-render of the component with the new state. This process is typically asynchronous, and React batches multiple state updates together for performance.
 
     <!-- Update here: /questions/explain-what-happens-when-setstate-is-called-in-react/en-US.mdx -->
 
