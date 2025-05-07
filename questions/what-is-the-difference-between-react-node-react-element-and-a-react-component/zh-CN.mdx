@@ -39,26 +39,26 @@ const element = React.createElement(
 
 一个 **React Component** 是一个可重用的 UI 片段，它可以接受输入（props）并返回描述 UI 的 React 元素。 有两种类型的组件：函数组件和类组件。
 
-*   **函数组件**：这些更简单，只是将 props 作为参数并返回 React 元素的函数。
+* **函数组件**：这些更简单，只是将 props 作为参数并返回 React 元素的函数。
 
-    ```jsx
-    function Welcome(props) {
-      return <h1>Hello, {props.name}</h1>;
-    }
-    ```
+  ```jsx
+  function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+  }
+  ```
 
-*   **类组件**：这些是扩展 `React.Component` 的 ES6 类，并且必须具有返回 React 元素的 `render` 方法。
-    ```jsx
-    class Welcome extends React.Component {
-      render() {
-        return <h1>Hello, {this.props.name}</h1>;
-      }
+* **类组件**：这些是扩展 `React.Component` 的 ES6 类，并且必须具有返回 React 元素的 `render` 方法。
+  ```jsx
+  class Welcome extends React.Component {
+    render() {
+      return <h1>Hello, {this.props.name}</h1>;
     }
-    ```
+  }
+  ```
 
 ## 延伸阅读
 
-*   [React 文档：渲染与提交](https://react.dev/learn/render-and-commit)
-*   [React 文档：将 Props 传递给组件](https://react.dev/learn/passing-props-to-a-component)
-*   [React 文档：使用 JSX 书写标签语言](https://react.dev/learn/writing-markup-with-jsx)
-*   [React 文档：State：组件的记忆](https://react.dev/learn/state-a-components-memory)
+* [React documentation: Render and commit](https://react.dev/learn/render-and-commit)
+* [React documentation: Passing Props to a Component](https://react.dev/learn/passing-props-to-a-component)
+* [React documentation: Writing Markup with JSX](https://react.dev/learn/writing-markup-with-jsx)
+* [React documentation: State: A Component's Memory](https://react.dev/learn/state-a-components-memory)

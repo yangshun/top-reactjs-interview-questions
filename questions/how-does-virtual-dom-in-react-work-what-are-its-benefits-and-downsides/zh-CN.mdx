@@ -24,24 +24,19 @@ React 中的虚拟 DOM 是实际 DOM 的轻量级副本。当组件的状态发�
 ### 代码示例
 
 ```jsx
-class MyComponent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { count: 0 };
-  }
+import { useState } from 'react';
 
-  increment = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
+function MyComponent() {
+  const [count, setCount] = useState(0);
 
-  render() {
-    return (
-      <div>
-        <p>{this.state.count}</p>
-        <button onClick={this.increment}>Increment</button>
-      </div>
-    );
-  }
+  const increment = () => setCount(count + 1);
+
+  return (
+    <div>
+      <p>{count}</p>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
 }
 ```
 
@@ -75,6 +70,5 @@ class MyComponent extends React.Component {
 
 ## 延伸阅读
 
-* [React 关于协调的文档](https://react.dev/learn/preserving-and-resetting-state)
-* [理解虚拟 DOM](https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060)
-* [React memo 性能优化](https://react.dev/reference/react/memo#skipping-re-rendering-when-props-are-unchanged)
+* [React Docs on Reconciliation](https://react.dev/learn/render-and-commit)
+* [What is the Virtual DOM in React?](https://www.freecodecamp.org/news/what-is-the-virtual-dom-in-react/)

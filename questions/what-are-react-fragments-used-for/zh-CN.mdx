@@ -59,11 +59,13 @@ React Fragments 允许您对多个元素进行分组，而无需向 DOM 添加�
 
 ```jsx
 return (
-  <React.Fragment>
+  <>
     {items.map((item) => (
-      <ChildComponent key={item.id} />
+      <React.Fragment key={item.id}>
+        <ChildComponent />
+      </React.Fragment>
     ))}
-  </React.Fragment>
+  </>
 );
 ```
 
@@ -75,6 +77,6 @@ return (
 
 ## 延伸阅读
 
-* [React Fragments - 官方文档](https://react.dev/reference/react/Fragment)
-* [React Fragments - 完整指南](https://www.freecodecamp.org/news/react-fragments-complete-guide/)
-* [何时使用 React Fragments](https://blog.logrocket.com/when-to-use-react-fragments/)
+* [React Fragments - Official Documentation](https://react.dev/reference/react/Fragment)
+* [React Fragments - A Complete Guide](https://www.freecodecamp.org/news/react-fragments-complete-guide/)
+* [When to use React Fragments](https://blog.logrocket.com/when-to-use-react-fragments/)
