@@ -21,7 +21,7 @@
     "github-slugger": "^2.0.0",
     "globby": "^14.0.1",
     "gray-matter": "^4.0.3",
-    "langnostic": "^0.0.5",
+    "langnostic": "^0.0.7",
     "tsx": "^4.15.1"
   },
   "packageManager": "pnpm@8.15.8",
