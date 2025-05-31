@@ -12,13 +12,13 @@ React Fiber is a complete rewrite of React's reconciliation algorithm, introduce
 
 ### Introduction to React Fiber
 
-React Fiber is a reimplementation of React's core algorithm for rendering and reconciliation. It was introduced in React 16 to address limitations in the previous stack-based algorithm. The primary goal of Fiber is to enable incremental rendering of the virtual DOM, which allows React to split rendering work into chunks and spread it out over multiple frames.
+React Fiber is a re-implementation of React's core algorithm for rendering and reconciliation. It was introduced in React 16 to address limitations in the previous stack-based algorithm. The primary goal of Fiber is to enable incremental rendering of the virtual DOM, which allows React to split rendering work into chunks and spread it out over multiple frames.
 
 ### Key improvements over the previous approach
 
 #### Incremental rendering
 
-The previous stack-based algorithm processed updates in a single, synchronous pass, which could lead to performance issues, especially with complex UIs. React Fiber breaks down rendering work into smaller units called "fibers," allowing React to pause and resume work. This makes the UI more responsive and prevents blocking the main thread for long periods.
+The previous stack-based algorithm processed updates in a single, synchronous pass, which could lead to performance issues, especially with complex UIs. React Fiber breaks down rendering work into smaller units called "fibers", allowing React to pause and resume work. This makes the UI more responsive and prevents blocking the main thread for long periods.
 
 #### Time slicing
 
