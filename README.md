@@ -1,4 +1,4 @@
-# Top React.js Interview Questions
+# Top React.js Interview Questions (Updated for 2025)
 
 Curated top React.js interview questions with high quality answers for acing your front end interviews.
 
