@@ -125,7 +125,7 @@ ${qn.content
 
     > Read the [detailed answer](${
       qn.href
-    }) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    }) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
