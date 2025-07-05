@@ -82,7 +82,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-react-describe-the-benefits-of-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-react-describe-the-benefits-of-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -98,7 +98,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-difference-between-react-node-react-element-and-a-react-component?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-difference-between-react-node-react-element-and-a-react-component?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -114,7 +114,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-jsx-and-how-does-it-work?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-jsx-and-how-does-it-work?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -130,7 +130,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-difference-between-state-and-props-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-difference-between-state-and-props-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -152,7 +152,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-purpose-of-the-key-prop-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-purpose-of-the-key-prop-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -168,7 +168,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-consequence-of-using-array-indices-as-the-value-for-key-s-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-consequence-of-using-array-indices-as-the-value-for-key-s-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -184,7 +184,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-difference-between-controlled-and-uncontrolled-react-components?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-difference-between-controlled-and-uncontrolled-react-components?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -200,7 +200,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-some-pitfalls-about-using-context-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-some-pitfalls-about-using-context-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -216,7 +216,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-the-benefits-of-using-hooks-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-the-benefits-of-using-hooks-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -232,7 +232,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-the-rules-of-react-hooks?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-the-rules-of-react-hooks?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -272,7 +272,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-difference-between-useeffect-and-uselayouteffect-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-difference-between-useeffect-and-uselayouteffect-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -294,7 +294,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-purpose-of-callback-function-argument-format-of-setstate-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-purpose-of-callback-function-argument-format-of-setstate-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -310,7 +310,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-does-the-dependency-array-of-useeffect-affect?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-does-the-dependency-array-of-useeffect-affect?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -340,7 +340,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-useref-hook-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-useref-hook-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -362,7 +362,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-usecallback-hook-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-usecallback-hook-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -382,7 +382,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-usememo-hook-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-usememo-hook-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -404,7 +404,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-usereducer-hook-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-usereducer-hook-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -434,7 +434,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-useid-hook-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-useid-hook-in-react-and-when-should-it-be-used?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -450,7 +450,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-does-re-rendering-mean-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-does-re-rendering-mean-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -475,7 +475,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-react-fragments-used-for?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-react-fragments-used-for?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -497,7 +497,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-forwardref-in-react-used-for?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-forwardref-in-react-used-for?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -523,7 +523,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-reset-a-components-state-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-reset-a-components-state-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -539,7 +539,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/why-does-react-recommend-against-mutating-state?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/why-does-react-recommend-against-mutating-state?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -555,7 +555,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-error-boundaries-in-react-for?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-error-boundaries-in-react-for?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -571,7 +571,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-test-react-applications?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-test-react-applications?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -587,7 +587,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-what-react-hydration-is?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-what-react-hydration-is?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -603,7 +603,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-react-portals-used-for?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-react-portals-used-for?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -619,7 +619,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-debug-react-applications?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-debug-react-applications?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -635,7 +635,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-react-strict-mode-and-what-are-its-benefits?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-react-strict-mode-and-what-are-its-benefits?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -661,7 +661,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-localize-react-applications?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-localize-react-applications?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -690,7 +690,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-code-splitting-in-a-react-application?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-code-splitting-in-a-react-application?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -710,7 +710,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-would-one-optimize-the-performance-of-react-contexts-to-reduce-rerenders?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-would-one-optimize-the-performance-of-react-contexts-to-reduce-rerenders?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -734,7 +734,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-higher-order-components-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-higher-order-components-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -767,7 +767,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-flux-pattern-and-what-are-its-benefits?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-the-flux-pattern-and-what-are-its-benefits?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -783,7 +783,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-one-way-data-flow-of-react-and-its-benefits?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-one-way-data-flow-of-react-and-its-benefits?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -825,7 +825,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-handle-asynchronous-data-loading-in-react-applications?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-handle-asynchronous-data-loading-in-react-applications?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -841,7 +841,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-server-side-rendering-of-react-applications-and-its-benefits?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-server-side-rendering-of-react-applications-and-its-benefits?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -857,7 +857,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-static-generation-of-react-applications-and-its-benefits?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-static-generation-of-react-applications-and-its-benefits?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -873,7 +873,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-the-presentational-vs-container-component-pattern-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-the-presentational-vs-container-component-pattern-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -889,7 +889,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-some-common-pitfalls-when-doing-data-fetching-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-some-common-pitfalls-when-doing-data-fetching-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -927,7 +927,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-render-props-in-react-and-what-are-they-for?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-render-props-in-react-and-what-are-they-for?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -950,7 +950,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-some-react-anti-patterns?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-are-some-react-anti-patterns?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -966,7 +966,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-decide-between-using-react-state-context-and-external-state-managers?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-do-you-decide-between-using-react-state-context-and-external-state-managers?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -997,7 +997,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-the-composition-pattern-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-the-composition-pattern-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -1013,7 +1013,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-virtual-dom-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-virtual-dom-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -1029,7 +1029,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-does-virtual-dom-in-react-work-what-are-its-benefits-and-downsides?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/how-does-virtual-dom-in-react-work-what-are-its-benefits-and-downsides?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -1045,7 +1045,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-react-fiber-and-how-is-it-an-improvement-over-the-previous-approach?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-react-fiber-and-how-is-it-an-improvement-over-the-previous-approach?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -1061,7 +1061,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-reconciliation-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-reconciliation-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -1089,7 +1089,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-react-suspense-and-what-does-it-enable?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/what-is-react-suspense-and-what-does-it-enable?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
@@ -1105,7 +1105,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <br>
 
-    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-what-happens-when-setstate-is-called-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com/) which allows progress tracking, contains more code samples, and useful resources.
+    > Read the [detailed answer](https://www.greatfrontend.com/questions/quiz/explain-what-happens-when-setstate-is-called-in-react?framework=react&tab=quiz) on [GreatFrontEnd](https://www.greatfrontend.com?gnrs=github) which allows progress tracking, contains more code samples, and useful resources.
 
     [Back to top ↑](#table-of-contents)
     <br>
