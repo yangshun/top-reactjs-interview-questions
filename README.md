@@ -1023,7 +1023,7 @@ Curated top React.js interview questions with high quality answers for acing you
 
     <!-- Update here: /questions/how-does-virtual-dom-in-react-work-what-are-its-benefits-and-downsides/en-US.mdx -->
 
-    The virtual DOM in React is a lightweight copy of the actual DOM. When the state of a component changes, React creates a new virtual DOM tree and compares it with the previous one using a process called diffing and the process of updating DOM is called "reconciliation." Only the differences are then updated in the actual DOM, making updates more efficient. The benefits include improved performance and a more declarative way to manage UI. However, it can add complexity and may not be as performant for very simple applications.
+    The virtual DOM in React is a lightweight copy of the actual DOM. When the state of a component changes, React creates a new virtual DOM tree and compares it with the previous one using a process called "reconciliation." Only the differences are then updated in the actual DOM, making updates more efficient. The benefits include improved performance and a more declarative way to manage UI. However, it can add complexity and may not be as performant for very simple applications.
 
     <!-- Update here: /questions/how-does-virtual-dom-in-react-work-what-are-its-benefits-and-downsides/en-US.mdx -->
 
